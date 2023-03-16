@@ -1,0 +1,29 @@
+@import '../../Sass/variables.scss';
+
+body{
+    margin: 0;
+}
+.api{
+    padding: 3rem 2rem;
+    background: $dark;
+    color: $light;
+    
+   
+    &__content{
+        display: flex;
+        flex-flow: row nowrap; 
+        gap: 2rem;
+        font-family: $syne;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.85rem;
+        overflow: scroll;
+        &__child{
+        min-width: 100%;
+        }
+    }
+    &__content::-webkit-scrollbar{
+        width: 0;
+    }
+      
+}

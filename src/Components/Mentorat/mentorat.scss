@@ -1,0 +1,54 @@
+@import '../../Sass/variables.scss';
+@import '../../Sass/variables.scss';
+
+.mentorat{
+    padding: 5rem 2rem;
+    background-color: $light;
+    color: $dark;
+    
+   
+    &__content{
+        
+        display: flex;
+        flex-flow: row nowrap; 
+        gap: 2rem;
+        line-height: 1.85rem;
+        overflow: scroll;
+        &__child{
+            
+            min-width: 100%;
+        }
+        &__child img{
+            margin-right: 8px;
+
+        }
+        
+        
+    }
+    &__content::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .mentorat__content__child img {
+            width: 73px;
+            height: 85px;
+          }
+          &__content{
+            &__child p{
+                font-family: $Dm ;
+                font-size: 20px;
+                line-height: 25px;
+                font-weight: bold;
+            }
+            &__child h2{
+                font-family: $syne ;
+                font-size: 25px;
+                line-height: 30px;
+                font-weight: 700;
+                
+            }
+          }
+          
+    }
+}

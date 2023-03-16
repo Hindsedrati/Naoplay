@@ -1,0 +1,140 @@
+@import '../../Sass/variables.scss';
+
+.home__header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: $dark ;
+}
+
+.nav{
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        z-index: 10;
+        width: 150px;
+    }
+    &__menu{
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    &__list{
+        display: flex;
+        gap: 2rem;
+    }
+    &__item{
+        color: $light;
+        padding-bottom: 0.5rem;
+        border: 2px solid ;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+    &__item:hover{
+        color: $light;
+        border-color: $light;
+
+        transition: 0.3s;
+    }
+    &__theme{
+        position: relative;
+
+        .to__light{
+            position: absolute;
+            background-color: transparent;
+        }
+    }
+    &__toggle{
+        display: none;
+    }
+    button{
+        font-size: 1.5rem;
+        background-color: transparent;
+    }
+    .to__light{
+        color: red;
+    }
+}
+
+/******** MEDIA QUERIES FOR SMALL DEVICES **********/
+@media screen and (max-width:767px) {
+    .container{
+        width: 90%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        overflow-x: hidden;
+    }
+    .nav{
+        &__menu{
+            gap: 3rem;
+        }
+        &__list{
+            position: fixed;
+            flex-direction: column;
+            top: 0;
+            right: 0;
+            width: 50vw;
+            height: 100vh;
+            z-index: 999;
+    
+            gap: 4rem;
+            padding-left: 2rem;
+            padding-top: 10rem;
+            background: $primary;
+            backdrop-filter: blur(2px);
+            transform: translateX(100%);
+            transition: 0.3s ease-in-out;
+        }
+        &__list[aria-expanded="true"]{
+            transform: translateX(0%);
+        }
+        &__item{
+            text-decoration: none;
+            color: $light;
+            border: none;
+        }
+        &__toggle{
+            width: 2.2rem;
+            height: 2.2rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 1000;
+
+            .bar{
+
+                background: $light;
+                display: inline-block;
+                height: 4px;
+                transition: 0.2s ease-in-out;
+                border-radius: 30px;
+                &__second{
+                    transform: translateX(17%);
+                    width: 1.8rem;
+                }
+                
+            }
+            
+        }
+        &__toggle[aria-expanded="true"]{
+            .bar:nth-child(2){
+                opacity: 0;
+                
+            }
+            .bar:nth-child(1){
+                transform: translateY(11px) rotate(45deg);
+            }
+            .bar:nth-child(3){
+                transform: translateY(-20px) rotate(-45deg);
+            }
+        }
+    }
+    
+}

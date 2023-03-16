@@ -1,0 +1,67 @@
+import "./header.scss"
+
+import { useState } from "react"
+
+import LOGO from "../../assets/logo.webp"
+import { Link } from "react-router-dom";
+
+const Header = () => {
+
+    const [attribut, setAttribut] = useState("false")
+
+    /**
+     * Use to set aria value that allow to show/don't show the menu and scroll to the top
+     * @param {NavList ariaExpended value} value 
+     */
+    const ariaExpanded = (value) => {
+        if(value === "false"){
+            setAttribut("true")
+            window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+        }else{
+            setAttribut("false")
+            window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+        }
+    }
+
+    
+
+    return (
+        <header className="header home__header">
+            <nav className="nav container">
+                <Link to="/" className="nav__logo" onClick={()=> {window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}>
+                    <img className="nav__logo" src={LOGO} alt="Logo Naoplay" />
+                </Link>
+
+                <div className="nav__menu">
+                    <div className="nav__list" aria-expanded={ attribut } onClick={()=> ariaExpanded(`${attribut}`)}>
+                        <Link to='/' className="nav__item" id="Home" aria-expanded={ attribut } onClick={()=> ariaExpanded(`${attribut}`)}>
+                            Accueil
+                        </Link>
+                        <Link to='/' className="nav__item" aria-expanded={ attribut } onClick={()=> ariaExpanded(`${attribut}`)}>
+                            Nos offres
+                        </Link>
+                        <Link to='/' className="nav__item" aria-expanded={ attribut } onClick={()=> ariaExpanded(`${attribut}`)}>
+                            À propos
+                        </Link>
+                        <Link to='/' className="nav__item" aria-expanded={ attribut } onClick={()=> ariaExpanded(`${attribut}`)}>
+                            FAQ
+                        </Link>
+                    </div>
+
+                    {/********* Navigation buttons ******/}
+                    
+
+                    {/********* Hamburger Menu for Mobile ******/}
+                    <div className="nav__toggle" aria-expanded={ attribut }
+                    onClick={()=> ariaExpanded(`${attribut}`)}>
+                        <span className="bar"></span>
+                        <span className="bar bar__second"></span>
+                        <span className="bar"></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    )
+}
+
+export default Header

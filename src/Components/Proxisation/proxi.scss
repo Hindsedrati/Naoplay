@@ -1,0 +1,32 @@
+@import '../../Sass/variables.scss';
+@font-face {
+    font-family: 'MonumentExtended';
+    src: url('../../Sass/fonts/MonumentExtended-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.proxi{
+    background: $light;
+    color: $dark;
+    padding: 3rem 2rem;
+    
+
+
+    @media screen and (max-width: 768px) {
+        .proxi {
+            &__title {
+                font-family: 'MonumentExtended', sans-serif;
+                font-size: 30px;
+                line-height: 35px;
+                
+            }
+            &__txt{
+                font-family: $syne;
+                font-size: 25px;
+                line-height: 30px;
+                font-weight: 700;
+            }
+        }
+    }
+}

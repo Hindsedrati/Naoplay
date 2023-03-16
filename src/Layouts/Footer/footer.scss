@@ -1,0 +1,156 @@
+@import '../../sass/variables';
+@font-face {
+    font-family: 'MonumentExtended';
+    src: url('../../Sass/fonts/MonumentExtended-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer{
+    
+    background-image: url('../../assets/eye-naoplay.webp');
+    background-repeat: no-repeat;
+    background-size: 1000px ;
+    background-position: center;
+   
+    &__btn{
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 3px;
+        font-family: $syne;
+        background-color: $light;
+        color: $dark;
+        
+        
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: lighten($primary, 10%);
+        }
+    }
+    &__container{
+       
+        
+        display: flex;
+        align-items: center;
+        gap: 6rem;
+        color: $light;
+    }
+    &__address{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 2rem 0;
+        
+        
+        width: 100%;
+        height: 300%;
+        object-fit: none;
+        small{
+            display: block;
+        }
+        h1{
+            font-family: 'MonumentExtended', sans-serif;
+        }
+        h2{
+            font-family: $syne;
+        }
+    }
+    &__contact{
+        background: $dark;
+        margin-left: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        a{
+            color: $light;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+    }
+    
+    
+    &__icons{
+        a{
+            color: $light;
+            &:hover,
+            &:active,
+            &:focus {
+              color: $primary; // couleur de l'icône au clic
+            }
+        }
+       
+    
+}
+
+
+/******** MEDIA QUERIES FOR SMALL DEVICES **********/
+@media screen and (max-width: 768px) {
+    .footer{
+
+        &__container{
+            gap: 1rem;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            
+        }
+        
+        &__address{
+            display: flex;
+            flex-direction: column;
+            h1{
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: Medium;
+                margin-left: 9%;
+            }
+            h2{
+                font-size: 25px;
+                line-height: 30px;
+                font-weight: 500;
+                margin-left: 9%;
+            }
+        }
+        &__btn{
+            font-weight: 700;
+            font-size: 15px;
+            width: 240px;
+            height: 55px;
+            
+        }
+        &__icons a{
+            display: inline-block;
+            color: $dark;
+            width: 35px;
+            height: 35px;
+            border-radius: 60%; 
+            background: $light; 
+            text-align: center;
+            line-height: 35px;
+            gap: 1rem;
+            
+        }
+        &__mentions{
+            display: flex;
+            color: $light;
+            text-decoration: none;
+            font-family: $Dm;
+            font-size: 20px;
+            line-height: 25px;
+            font-weight: 500;
+            margin-right: 100px;
+            margin-top: 13px;
+        }
+        &__contact{
+            font-family: $Dm;
+            font-size: 20px;
+            line-height: 25px;
+            font-weight: 500;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+    }
+}
+}

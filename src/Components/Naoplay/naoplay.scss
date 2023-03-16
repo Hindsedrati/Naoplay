@@ -1,0 +1,27 @@
+@import '../../Sass/mixins.scss';
+@import '../../Sass/variables.scss';
+
+
+.naoplay{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    h3{
+        
+        line-height: 1.3em;
+    }
+    p{
+        font-weight: 600;
+        line-height: 1.3em;
+    }
+    @media screen and (max-width: 768px) {
+        .naoplay  {
+            p{
+                font-weight: 600;
+            }      
+        }
+    }
+
+}
+
+
+
