@@ -1,32 +1,142 @@
 @import '../../Sass/variables.scss';
+
 @font-face {
     font-family: 'MonumentExtended';
     src: url('../../Sass/fonts/MonumentExtended-Regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
-.proxi{
+.proxi {
     background: $light;
     color: $dark;
-    padding: 3rem 2rem;
+    padding: 2rem 1rem;
     
-
+    .arrow_1 {
+        position: absolute;
+        bottom: 2px;
+        right: 10px;
+        font-size: 30px;
+        color: $dark;
+        background: $light;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    .arrow_2 {
+        position: absolute;
+        bottom: 2px;
+        right: -23rem;
+        font-size: 30px;
+        background: $light;
+        color: $dark;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
 
     @media screen and (max-width: 768px) {
         .proxi {
             &__title {
                 font-family: 'MonumentExtended', sans-serif;
                 font-size: 30px;
+                font-weight: Medium;
                 line-height: 35px;
-                
             }
-            &__txt{
+
+            &__txt {
                 font-family: $syne;
                 font-size: 25px;
                 line-height: 30px;
-                font-weight: 700;
+                font-weight: bold;
             }
+            &__diagramme{
+                display: none;
+            }
+        }
+        .arrow_1{
+            display: none;
+        }
+        .arrow_2{
+            display: none;
         }
     }
 }
+/*---Media pour tablettes et ordinateurs portables*/
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+    .proxi{
+        position: relative;
+        padding: 8rem 10rem;
+        color: $light;
+        background: $primary;
+      
+        &__title{
+            text-align: start;
+            font-family: 'MonumentExtended', sans-serif;
+            font-size: 70px;
+        }
+        &__textes{
+            padding: 0 25rem 0 0rem;
+            display: grid;
+            text-align: start;
+            /*grid-template-columns: 1fr 1fr;*/
+            
+        }
+        &__txt{
+            //margin-right: 11rem;
+            font-family: $syne;
+            font-size: 30px;
+        }
+        &__diagramme{
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 80%;
+            width: 50%; 
+            z-index: 10; 
+        }
+        .arrow_1{
+            display: none;
+        }
+        .arrow_2{
+            display: none;
+        }
+    }
+} 
+
+
+/*---Media pour ordinateurs de bureau*/
+@media screen and (min-width: 1901px) {
+    .proxi{
+        width: 100%;
+        overflow: hidden;
+        padding: 10rem 25rem 8rem 15rem;
+        color: $light;
+        min-width: 100%;
+        background: $primary;
+      
+        &__title{
+            text-align: start;
+            font-family: 'MonumentExtended', sans-serif;
+            font-size: 70px;
+        }
+        &__textes{
+            padding: 0 30rem 0 0rem;
+            display: grid;
+            text-align: start;
+            grid-template-columns: 1fr 1fr;
+            
+        }
+        &__txt{
+            margin-right: 11rem;
+            font-family: $syne;
+            font-size: 30px;
+        }
+    }
+}   
+               

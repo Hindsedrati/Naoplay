@@ -1,54 +1,129 @@
 @import '../../Sass/variables.scss';
-@import '../../Sass/variables.scss';
 
-.mentorat{
-    padding: 5rem 2rem;
-    background-color: $light;
+@font-face {
+    font-family: 'MonumentExtended';
+    src: url('../../Sass/fonts/MonumentExtended-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.mentorat {
+    padding: 3rem 1rem;
     color: $dark;
-    
-   
-    &__content{
-        
-        display: flex;
-        flex-flow: row nowrap; 
-        gap: 2rem;
-        line-height: 1.85rem;
-        overflow: scroll;
-        &__child{
-            
-            min-width: 100%;
-        }
-        &__child img{
-            margin-right: 8px;
 
-        }
-        
-        
+    &__title {
+        font-family: 'MonumentExtended', sans-serif;
     }
-    &__content::-webkit-scrollbar{
+    &__content::-webkit-scrollbar {
         width: 0;
     }
-    
+
     @media screen and (max-width: 768px) {
+        .mentorat {
+            &__title {
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: 500;
+            }
+            &__title1{
+                display: none;
+            }
+        }
+
         .mentorat__content__child img {
+            background-color: $light;
+            color: $dark;
             width: 73px;
             height: 85px;
-          }
-          &__content{
-            &__child p{
+            margin-right: 1rem;
+        }
+
+        &__content {
+
+            &__child p {
                 font-family: $Dm ;
                 font-size: 20px;
                 line-height: 25px;
-                font-weight: bold;
+                font-weight: 700;
+
             }
-            &__child h2{
+
+            &__child h2 {
                 font-family: $syne ;
                 font-size: 25px;
                 line-height: 30px;
-                font-weight: 700;
+                font-weight: 600;
+
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1900px){
+    .mentorat{
+        
+        display: flex;
+        flex-direction: row-reverse;
+        &__title{
+            display: none;
+        }
+        &__title1{
+            font-family: 'MonumentExtended', sans-serif;
+            font-size: 60px;
+            line-height: 80px;
+            font-weight: 500;
+        }
+        &__content{
+            &__child img{
+                margin-right: 3rem;
+                width: 215px;
+            }
+            &__child p{
+                font-size: 25px;
+                font-weight: bold;
+                font-family: $syne;
+                margin-right: 5rem;
+            }
+            &__child h2{
+                font-family: $syne;
+                font-size: 30px;
                 
             }
-          }
-          
+        }
+        .first{
+            display: flex;
+            align-items: center;
+            padding: 3rem 0rem 2rem 6rem;
+            z-index: -3;
+            width: 100%;
+        }
+        .second{
+            padding: 4rem;
+            color: $light;
+            background: $dark;
+            z-index: 10;
+        }
+    }
+}
+@media screen and (min-width: 1901px) {
+    .mentorat{
+        display: flex;
+        flex-direction: row-reverse;
+        &__title{
+            display: none;
+        }
+        &__title1{
+            font-family: 'MonumentExtended', sans-serif;
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 500;
+        }
+        
+        &__content{
+            position: relative;
+            &__child img{
+                background: $dark;
+                width: 195px;
+            }
+            
+        }
     }
 }

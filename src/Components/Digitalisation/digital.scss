@@ -1,4 +1,3 @@
-@import '../../Sass/mixins.scss';
 @import '../../Sass/variables.scss';
 @font-face {
   font-family: 'MonumentExtended';
@@ -6,36 +5,44 @@
   font-weight: normal;
   font-style: normal;
 }
-.digital{
-    background-image: url('../../assets/eye-naoplay.webp');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    object-fit: none;
-    color: $light;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    &__content {
-      width: 100%;
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 1rem;
-      text-align: center;
-    }
-    
-    &__title {
-      font-family: 'MonumentExtended', sans-serif;
 
-      margin: 0;
-      font-size: 2rem;
-      line-height: 1;
-      
+.digital {
+  background-image: url('../../assets/eye-naoplay.webp');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  object-fit: none;
+  color: $light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: 'MonumentExtended', sans-serif;
+
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1;
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .digital{
+      display: none;
     }
-    
-    @media screen and (max-width: 768px) {
-       
-    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .digital{
+    display: none;
+  }
 }

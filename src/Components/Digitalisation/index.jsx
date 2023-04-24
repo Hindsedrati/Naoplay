@@ -3,12 +3,12 @@ import './digital.scss'
 
 const Digitalisation = () => {
   return (
-    <section className='digital'>
-        <div className='digital__content'>
+    <section id='digital' className='digital'>
+      <div className='digital__content'>
         <h1 className='digital__title'>API &<br /> Digitalisation</h1>
-        </div>
+      </div>
     </section>
-    
+
   )
 }
 
