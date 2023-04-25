@@ -7,7 +7,6 @@ ul li {
 }
 
 .home__header {
-    
     width: 100vw;
    height: 80px;
     z-index: 10;
@@ -205,15 +204,21 @@ ul li {
             &--first {
                 padding-top: 7rem;
             }
-            
+            &--second{
+                display: none;
+            }
+            &--second:first-child{
+                display: none;
+            }
+    
             ul {
-                text-decoration: none;
+                color: whit;
                 display: flex;
                 flex-direction: column;
             }
     
             li {
-                
+                color: $light;
                 margin-top: 1rem;
             }
         }
@@ -252,20 +257,15 @@ ul li {
         &__toggle[aria-expanded="true"] {
             .bar:nth-child(2) {
                 opacity: 0;
+
             }
+
             .bar:nth-child(1) {
                 transform: translateY(11px) rotate(45deg);
             }
+
             .bar:nth-child(3) {
                 transform: translateY(-20px) rotate(-45deg);
-            }
-        }
-        .nav{
-            &__list {
-                text-decoration: none;
-                &--second {
-                    display: none;
-                }
             }
         }
         &__menu {

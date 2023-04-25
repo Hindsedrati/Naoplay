@@ -75,7 +75,7 @@ function Contact() {
     <input type="tel" id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Téléphone"/>
     <label htmlFor="phone"></label>
     </div>
-    <input className='name__message' type="message" id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message*"></input>
+    <input className='contact__message' type="message" id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message*"></input>
     <label htmlFor="message"></label>
     
     

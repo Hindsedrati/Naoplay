@@ -109,24 +109,19 @@
           }
           
         }
-
-        .Link{
-          
+        form{
           display: grid;
           grid-template-columns: 1fr 1fr;
         }
-        .company{
-          display: grid;
-          grid-template-columns: 1fr 1fr;
+        input[type="text"],
+        input[type="email"]{
+          
+        }
+        label{
+          
+          background-color: red;
         }
         
-        .name__message{
-          display: block;
-          text-align: end;
-        }
-        input[type="text"]::placeholder {
-          text-align: end;
-        }
         p {
           font-family: $syne;
           font-size: 30px;

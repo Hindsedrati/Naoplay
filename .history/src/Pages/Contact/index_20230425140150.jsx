@@ -57,25 +57,25 @@ function Contact() {
     <div className='contact__second__child'>
     <article id='p2' className='contact__desktop'>
     <form className='' onSubmit={handleSubmit}>
-    <div className='name__message'> 
+    <div>
     <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nom complet*"/>
     <label htmlFor="name"></label>
     </div>
-    <div className='company'>
+    <div>
     <input type="text" id="company" value={company} onChange={(e) => setCompany(e.target.value)} placeholder="Société"/>
     <label htmlFor="company"></label>
 
     <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="E-Mail*"/>
     <label htmlFor="email"></label>
     </div>
-    <div className='Link'>
+    <div>
     <input type="text" id="linkedin" value={linkedin} onChange={(e) => setLinkedin(e.target.value)} placeholder="Profil LinkedIn"/>
     <label htmlFor="linkedin"></label>
 
     <input type="tel" id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Téléphone"/>
     <label htmlFor="phone"></label>
     </div>
-    <input className='name__message' type="message" id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message*"></input>
+    <input className='contact__message' type="message" id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message*"></input>
     <label htmlFor="message"></label>
     
     

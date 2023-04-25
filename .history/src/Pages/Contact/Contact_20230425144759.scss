@@ -124,8 +124,8 @@
           display: block;
           text-align: end;
         }
-        input[type="text"]::placeholder {
-          text-align: end;
+        ::placeholder{
+          justify-content: end;
         }
         p {
           font-family: $syne;

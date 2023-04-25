@@ -101,7 +101,8 @@
     }
     @media screen and (min-width: 769px) and (max-width: 1900px){
         .contact{
-          
+          display: grid;
+          grid-template-columns: 1fr 1fr;
           height: 100vh;
          padding: 2em 2em;
          &__mobile {
@@ -109,24 +110,16 @@
           }
           
         }
-
-        .Link{
-          
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-        }
-        .company{
-          display: grid;
-          grid-template-columns: 1fr 1fr;
+        form{
+          display: flex;
+          justify-content: end;
         }
         
-        .name__message{
-          display: block;
-          text-align: end;
+        label{
+          
+          background-color: red;
         }
-        input[type="text"]::placeholder {
-          text-align: end;
-        }
+        
         p {
           font-family: $syne;
           font-size: 30px;

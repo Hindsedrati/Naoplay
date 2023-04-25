@@ -111,22 +111,18 @@
         }
 
         .Link{
-          
           display: grid;
           grid-template-columns: 1fr 1fr;
         }
-        .company{
-          display: grid;
-          grid-template-columns: 1fr 1fr;
+        form{
+          
         }
         
-        .name__message{
-          display: block;
-          text-align: end;
+        label{
+          
+          
         }
-        input[type="text"]::placeholder {
-          text-align: end;
-        }
+        
         p {
           font-family: $syne;
           font-size: 30px;
