@@ -27,19 +27,7 @@ ul li {
         display: none;
     }
    
-    &__btn {
-            display: inline-block;
-            width: fit-content;
-            padding: 1rem 2rem;
-            margin-bottom: 2.5rem;
-            color: $dark;
-            background-color: $light;
-            font-family: $syne;
-            font-weight: 700;
-            text-decoration: none;
-        }
-
-    }
+   
 
 
 /******** MEDIA QUERIES FOR SMALL DEVICES **********/
@@ -58,7 +46,19 @@ ul li {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+        &__btn {
+            display: inline-block;
+            width: fit-content;
+            padding: 1rem 2rem;
+            margin-bottom: 2.5rem;
+            color: $dark;
+            background-color: $light;
+            font-family: $syne;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+    }
         &__logo__desktop{
             display: none;
         }

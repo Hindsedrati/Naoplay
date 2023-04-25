@@ -86,7 +86,7 @@ const Header = () => {
                         </ul>
                     </div>
 
-                    
+                    {/********* Hamburger Menu for Mobile ******/}
                     <div className="nav__toggle" aria-expanded={attribut}
                         onClick={() => ariaExpanded(`${attribut}`)}>
                         <span className="bar"></span>

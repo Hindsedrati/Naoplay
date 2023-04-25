@@ -233,6 +233,7 @@ ul li {
             z-index: 1000;
     
             .bar {
+    
                 background: $light;
                 display: inline-block;
                 height: 4px;
@@ -247,14 +248,13 @@ ul li {
             }
         }
         &__item{
-            padding: 7rem;
             color: $light;
             text-decoration: none;
         }
         &__item:hover {
             color: $primary;
             border-color: $light;
-            transform: scale(1.5);
+            transform: scale(1.1);
             transition: 0.3s;
         }
         &__toggle[aria-expanded="true"] {

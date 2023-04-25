@@ -233,6 +233,7 @@ ul li {
             z-index: 1000;
     
             .bar {
+    
                 background: $light;
                 display: inline-block;
                 height: 4px;
@@ -247,7 +248,7 @@ ul li {
             }
         }
         &__item{
-            padding: 7rem;
+            padding: 2rem;
             color: $light;
             text-decoration: none;
         }

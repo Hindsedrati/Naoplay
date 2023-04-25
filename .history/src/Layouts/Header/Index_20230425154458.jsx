@@ -80,13 +80,13 @@ const Header = () => {
                             <Link to="/Login" className="nav__item">
                                 Connexion
                             </Link>
-                            <Link to="/Contact" className="nav__btn">
+                            <Link to="/Contact" className="footer__btn">
                                 NOUS CONTACTER
                             </Link>
                         </ul>
                     </div>
 
-                    
+                    {/********* Hamburger Menu for Mobile ******/}
                     <div className="nav__toggle" aria-expanded={attribut}
                         onClick={() => ariaExpanded(`${attribut}`)}>
                         <span className="bar"></span>
