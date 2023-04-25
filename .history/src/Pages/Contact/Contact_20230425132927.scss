@@ -101,36 +101,66 @@
     }
     @media screen and (min-width: 769px) and (max-width: 1900px){
         .contact{
-          height: 100vh;
          padding: 2em 2em;
-         &__mobile {
+         
+          
+          &__mobile {
             display: none;
           }
+          &__message{
+            
+            text-align: end;
+          }
           
-        }
-        form{
+            
+            
+            #name,
+            #email {
+              justify-content: end;
+              text-align: end;
+              
+              margin-right: 1rem;
+            }
+            
+            #company,
+            #linkedin {
+              text-align: end;
+              //width: calc(50% - 1rem);
+            }
+            
+            #phone,
+            #message {
+              
+              text-align: end;
+              
+            }
+          }
+        
+        
+          form {
+            display: inline-block;
+          }
           
-          display: inline;
-        }
-        label{
-          background-color: red;
-        }
-        #email,
-        #company{
-            display: inline;
-            float: left;
-        }
-        #phone,
-        #linkedin{
-          float: right;
-        }
+          label,
+          input[type="text"],
+          input[type="email"],
+          input[type="tel"],
+          textarea {
+            display: inline-block;
+            width: calc(50% - 0.5rem);
+            margin-right: 1rem;
+          }
+        
         p {
           font-family: $syne;
+          font-weight: 100;
           font-size: 30px;
-          line-height: 40px;
+          text-align: left;
+          line-height: 35px;
         }
-        
-      }
+      }   
+    
+
     
   
     

@@ -7,7 +7,7 @@ function Gateway () {
             
             <article className='partone article1 Gateway__content'>
                 <div className='Gateway__content__child'>
-                    <p >SÉCURITÉ RÉSEAU</p>
+                <p >SÉCURITÉ RÉSEAU</p>
                     <p>POLICES DE SÉCURITÉ </p>
                     <p>AUTHENTIFICATION</p>
                     <p>AUTORISATIONS</p>

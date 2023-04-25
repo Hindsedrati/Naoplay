@@ -8,7 +8,27 @@
 .contact {
       background: $dark;
       color: $light;
-      
+      &__btn{
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        font-family: $syne;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        background-color: $light;
+        color: $dark;
+        width: 240px;
+        height: 55px;
+        display: inline-block;
+        align-self: flex-start; 
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: $primary;
+          color: $light;
+        }
+      }
      
       @media screen and (max-width: 768px) {
             .contact{
@@ -75,62 +95,23 @@
               padding: 2rem;
               font-size: 25px;
             }
-            &__btn{
-              text-align: center;
-              justify-content: center;
-              text-decoration: none;
-              font-family: $syne;
-              font-size: 20px;
-              font-weight: bold;
-              text-align: center;
-              background-color: $light;
-              color: $dark;
-              width: 240px;
-              height: 55px;
-              display: inline-block;
-              align-self: flex-start; 
-              cursor: pointer;
-              transition: background-color 0.3s ease;
-              &:hover {
-                background-color: $primary;
-                color: $light;
-              }
-            }
+            
         }
     
     }
     @media screen and (min-width: 769px) and (max-width: 1900px){
         .contact{
-          height: 100vh;
-         padding: 2em 2em;
-         &__mobile {
+          height: 80vh;
+          flex-direction: row;
+          align-items: flex-end;
+          justify-content: center;
+          padding: 1rem 1rem;
+          &__mobile{
             display: none;
           }
-          
         }
-        form{
-          
-          display: inline;
-        }
-        label{
-          background-color: red;
-        }
-        #email,
-        #company{
-            display: inline;
-            float: left;
-        }
-        #phone,
-        #linkedin{
-          float: right;
-        }
-        p {
-          font-family: $syne;
-          font-size: 30px;
-          line-height: 40px;
-        }
-        
-      }
+    }
+
     
   
     

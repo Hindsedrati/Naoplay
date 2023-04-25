@@ -109,7 +109,7 @@
           
         }
         form{
-          
+          justify-content: center;
           display: inline;
         }
         label{
@@ -119,10 +119,6 @@
         #company{
             display: inline;
             float: left;
-        }
-        #phone,
-        #linkedin{
-          float: right;
         }
         p {
           font-family: $syne;

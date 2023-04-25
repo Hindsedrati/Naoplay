@@ -196,16 +196,13 @@ ul li {
             z-index: 999;
             text-decoration: none;
             color: $light;
-            background: $dark;
+            background: red;
             backdrop-filter: blur(2px);
             transform: translateX(100%);
             transition: 0.3s ease-in-out;
     
             &--first {
                 padding-top: 7rem;
-            }
-            &__second{
-                display: none;
             }
             &__second:first-child{
                 display: none;

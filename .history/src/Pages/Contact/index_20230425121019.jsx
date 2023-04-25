@@ -56,7 +56,7 @@ function Contact() {
     
     <div className='contact__second__child'>
     <article id='p2' className='contact__desktop'>
-    <form className='' onSubmit={handleSubmit}>
+    <form className='contact__content__child' onSubmit={handleSubmit}>
     
     <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nom complet*"/>
     <label htmlFor="name"></label>
@@ -76,13 +76,13 @@ function Contact() {
     <input className='contact__message' type="message" id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message*"></input>
     <label htmlFor="message"></label>
     
-    
+    <button className='contact__btn' type="submit">Envoyer</button>
     </form>
 
     </article>
 
     </div>
-    <button className='contact__btn' type="submit">Envoyer</button>
+
     </section>
     );
   }

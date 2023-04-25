@@ -8,10 +8,7 @@ function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [company, setCompany] = useState('');
-  const [linkedin, setLinkedin] = useState('');
   const [message, setMessage] = useState('');
-  
   
   
   // Fonction de gestionnaire d'événements pour la soumission du formulaire
@@ -36,9 +33,6 @@ function Contact() {
     <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nom"/>
     <label htmlFor="name"></label>
     
-    <input type="text" id="company" value={company} onChange={(e) => setCompany(e.target.value)} placeholder="Société"/>
-    <label htmlFor="company"></label>
-
     <input type="tel" id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Téléphone"/>
     <label htmlFor="phone"></label>
     
@@ -50,39 +44,30 @@ function Contact() {
     
     <button className='contact__btn' type="submit">Envoyer</button>
     </form>
-    
+
     </article>
-    </div>
-    
-    <div className='contact__second__child'>
     <article id='p2' className='contact__desktop'>
-    <form className='' onSubmit={handleSubmit}>
+    <form className='contact__content__child' onSubmit={handleSubmit}>
     
     <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nom complet*"/>
     <label htmlFor="name"></label>
     
-    <input type="text" id="company" value={company} onChange={(e) => setCompany(e.target.value)} placeholder="Société"/>
-    <label htmlFor="company"></label>
-
-    <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="E-Mail*"/>
-    <label htmlFor="email"></label>
-    
-    <input type="text" id="linkedin" value={linkedin} onChange={(e) => setLinkedin(e.target.value)} placeholder="Profil LinkedIn"/>
-    <label htmlFor="linkedin"></label>
-
     <input type="tel" id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Téléphone"/>
     <label htmlFor="phone"></label>
+    
+    <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="E-Mail*"/>
+    <label htmlFor="email"></label>
     
     <input className='contact__message' type="message" id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Message*"></input>
     <label htmlFor="message"></label>
     
-    
+    <button className='contact__btn' type="submit">Envoyer</button>
     </form>
 
     </article>
 
     </div>
-    <button className='contact__btn' type="submit">Envoyer</button>
+
     </section>
     );
   }

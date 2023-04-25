@@ -101,28 +101,16 @@
     }
     @media screen and (min-width: 769px) and (max-width: 1900px){
         .contact{
-          height: 100vh;
          padding: 2em 2em;
          &__mobile {
             display: none;
           }
-          
-        }
-        form{
-          
-          display: inline;
-        }
-        label{
-          background-color: red;
-        }
-        #email,
-        #company{
+          form{
             display: inline;
-            float: left;
-        }
-        #phone,
-        #linkedin{
-          float: right;
+          }
+          label{
+            background-color: red;
+          }
         }
         p {
           font-family: $syne;
