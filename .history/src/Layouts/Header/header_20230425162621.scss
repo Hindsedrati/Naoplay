@@ -175,23 +175,21 @@ ul li {
     
 
 }
-
-/*desktop*/
-
 @media screen and (min-width: 769px) and (max-width: 1900px){
-   
+    .ecart{
+        margin-left: 4em;
+    }
     .nav{
         color: $light;
         margin: 0 auto;
+        padding: 0 2rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        padding: 1rem 2rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         &__list {
-            
             position: fixed;
             top: 0;
             right: 0;
@@ -209,11 +207,15 @@ ul li {
                 font-family: 'MonumentExtended', sans-serif;
                 font-size: 80px;
                 font-weight: 700;
+                padding: 2rem 4rem 2rem 4rem;
             }
+            
             ul {
                 flex-direction: column;
             }
+    
             li {
+                
                 margin-top: 1rem;
             }
         }
@@ -267,7 +269,7 @@ ul li {
         }
         .nav{
             &__list {
-                
+                text-decoration: none;
                 &--second {
                     display: none;
                 }
@@ -279,12 +281,9 @@ ul li {
             display: flex;
             align-items: center;
             gap: 4rem;
-            
         }
     }
-    .ecart{
-        margin-left: 4em;
-    }
+    
     
 
     

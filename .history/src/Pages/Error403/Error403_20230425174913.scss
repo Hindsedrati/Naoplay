@@ -72,7 +72,9 @@
         grid-template-columns: 1fr 1fr;
         height: 100vh;
         
-        
+        .firstpart{
+            
+        }
         .secondpart{
             
             display: flex;
@@ -103,7 +105,6 @@
         display: none;
     }
     .desktop{
-        display: flex;
         justify-content: center;
         height: 594px;
         width: 396px;

@@ -48,22 +48,22 @@ const Header = () => {
                                 </a>
                                 <ul>
                                     <li >
-                                        <a href='#api' className="ecart nav__item" aria-expanded={attribut} onClick={() => ariaExpanded(`${attribut}`)}>
+                                        <a href='#api' className="nav__item" aria-expanded={attribut} onClick={() => ariaExpanded(`${attribut}`)}>
                                             API
                                         </a>
                                     </li>
                                     <li >
-                                        <a href='#api' className="ecart nav__item" aria-expanded={attribut} onClick={() => ariaExpanded(`${attribut}`)}>
+                                        <a href='#api' className="nav__item" aria-expanded={attribut} onClick={() => ariaExpanded(`${attribut}`)}>
                                             API Gateway
                                         </a>
                                     </li>
                                     <li >
-                                        <a href='#management' className="ecart nav__item" aria-expanded={attribut} onClick={() => ariaExpanded(`${attribut}`)}>
+                                        <a href='#management' className="nav__item" aria-expanded={attribut} onClick={() => ariaExpanded(`${attribut}`)}>
                                             API Management
                                         </a>
                                     </li>
                                     <li >
-                                        <a href='#proxi' className="ecart nav__item" aria-expanded={attribut} onClick={() => ariaExpanded(`${attribut}`)}>
+                                        <a href='#proxi' className="nav__item" aria-expanded={attribut} onClick={() => ariaExpanded(`${attribut}`)}>
                                             PROXISATION
                                         </a>
                                     </li>

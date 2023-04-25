@@ -183,9 +183,9 @@ ul li {
     .nav{
         color: $light;
         margin: 0 auto;
+        
         padding-top: 1rem;
         padding-bottom: 1rem;
-        padding: 1rem 2rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -206,14 +206,19 @@ ul li {
             transition: 0.3s ease-in-out;
     
             &--first {
+                
                 font-family: 'MonumentExtended', sans-serif;
                 font-size: 80px;
                 font-weight: 700;
+                
             }
+            
             ul {
                 flex-direction: column;
             }
+    
             li {
+                
                 margin-top: 1rem;
             }
         }
@@ -279,7 +284,6 @@ ul li {
             display: flex;
             align-items: center;
             gap: 4rem;
-            
         }
     }
     .ecart{

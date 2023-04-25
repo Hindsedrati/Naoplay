@@ -185,13 +185,12 @@ ul li {
         margin: 0 auto;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        padding: 1rem 2rem;
+        
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         &__list {
-            
             position: fixed;
             top: 0;
             right: 0;

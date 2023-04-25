@@ -69,17 +69,14 @@
 @media screen and (min-width: 769px) and (max-width: 1900px) {
     .error1{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
         height: 100vh;
         
         
         .secondpart{
-            
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+            display: block;
+           text-align: center;
             
         }
         &__bouton{
@@ -103,8 +100,7 @@
         display: none;
     }
     .desktop{
-        display: flex;
-        justify-content: center;
+        height: 100vh;
         height: 594px;
         width: 396px;
         background: $light;
