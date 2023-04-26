@@ -45,7 +45,7 @@
         padding-bottom: 0.5rem; 
         line-height: 1.5rem;
     }
-    button{
+    &__button{
         width: 200px;
         height: 55px;
         text-decoration: none;
@@ -90,6 +90,7 @@
     input {
         width: 50%;   
         font-size: 25px;
+        
         font-weight: 700;
         font-family: $syne;
         font-weight: 700;

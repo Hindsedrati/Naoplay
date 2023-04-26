@@ -95,7 +95,7 @@ const Header = () => {
                         </ul>
                     </div>
 
-                    <Link to="/Login" className="nav__user">
+                    <Link className="nav__user">
                         <img className="nav__user-image" src={USER} alt="User" />
                     </Link>
                     

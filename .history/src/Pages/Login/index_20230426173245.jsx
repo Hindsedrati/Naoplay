@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './login.scss';
-//import { Link } from 'react-router-dom';
 
 
 function Login () {
@@ -27,9 +26,9 @@ function Login () {
         <input placeholder="Pnom@naoplay.fr" type="email" name="email" value={email} onChange={handleEmailChange} />
       </label>
       <label>
-        <input placeholder="**********"  type="password" name="password" value={password} onChange={handlePasswordChange} />
+        <input placeholder="**************"  type="password" name="password" value={password} onChange={handlePasswordChange} />
       </label>
-      <button to='/*'  type="submit">CONNEXION</button>
+      <button type="submit">CONNEXION</button>
     </form>
   );
 };

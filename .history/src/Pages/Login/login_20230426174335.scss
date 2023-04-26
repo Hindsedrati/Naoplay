@@ -21,6 +21,28 @@
         justify-content: center;
         height: 80vh;
         background: $primary;
+
+        &__button{
+            width: 200px;
+            height: 55px;
+            text-decoration: none;
+            color: $dark;
+            display: inline-block;
+            margin-top: 2rem;
+            margin-bottom: 0; 
+            margin-left: 1.5rem;
+            background-color: $light;
+            font-family: $syne;
+            font-size: 15px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            border: none; 
+            align-self: flex-start; 
+            &:hover {
+                background-color: $dark;
+                color: $light;
+            }
+        }
       }
       ::placeholder {
         font-size: 22px;
@@ -45,27 +67,10 @@
         padding-bottom: 0.5rem; 
         line-height: 1.5rem;
     }
-    button{
-        width: 200px;
-        height: 55px;
-        text-decoration: none;
-        color: $dark;
-        display: inline-block;
-        margin-top: 2rem;
-        margin-bottom: 0; 
-        margin-left: 1.5rem;
-        background-color: $light;
-        font-family: $syne;
-        font-size: 15px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-        border: none; 
-        align-self: flex-start; 
-        &:hover {
-            background-color: $dark;
-            color: $light;
-        }
+    input:focus {
+        outline: none;
     }
+    
 }
 @media screen and (min-width: 769px) and (max-width: 1900px) {
     .login {
@@ -90,6 +95,7 @@
     input {
         width: 50%;   
         font-size: 25px;
+        
         font-weight: 700;
         font-family: $syne;
         font-weight: 700;

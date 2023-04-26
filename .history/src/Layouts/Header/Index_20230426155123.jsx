@@ -27,21 +27,21 @@ const Header = () => {
 
     return (
         <header className="header home__header">
-            
+            <Link>
+                    <img className="nav__user-image" src={USER} alt="User" />
+                </Link>
             <nav className="nav container1">
-                
                 <Link to="/" className="nav__logo" onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }) }}>
                     <img className="nav__logo__mobile" src={LOGO} alt="Logo Naoplay" />
                     <img className="nav__logo__desktop" src={DESKTOP} alt="Logo Naoplay" />
+                    
                 </Link>
 
                 
                    
 
                 <div className="nav__menu">
-                    
                     <div className="nav__list" aria-expanded={attribut} onClick={() => ariaExpanded(`${attribut}`)}>
-                    
                         <ul className="nav__list--first">
                             <li>
                                 <a href='#apropos' className="nav__item" id="Home" aria-expanded={attribut} onClick={() => ariaExpanded(`${attribut}`)}>
@@ -81,9 +81,11 @@ const Header = () => {
                                     Le mentorat naoplay
                                 </a>
                             </li>
-                            <Link className="btn" to="/">Nous contacter</Link>
+                            
                         </ul>
-                        
+                        <div className="btn">
+                            <Link to="/">Nous contacter</Link>
+                        </div>
                         
                         <ul className="nav__list--second">
                             <Link to="/Login" className="nav__item">
@@ -94,11 +96,9 @@ const Header = () => {
                             </Link>
                         </ul>
                     </div>
-
-                    <Link to="/Login" className="nav__user">
-                        <img className="nav__user-image" src={USER} alt="User" />
-                    </Link>
                     
+                    
+
                     <div className="nav__toggle" aria-expanded={attribut}
                         onClick={() => ariaExpanded(`${attribut}`)}>
                             
@@ -109,9 +109,8 @@ const Header = () => {
                     
                 </div>
             </nav>
-            
+                    
         </header>
-        
     )
 }
 export default Header

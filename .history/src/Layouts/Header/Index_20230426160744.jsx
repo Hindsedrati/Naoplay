@@ -29,7 +29,9 @@ const Header = () => {
         <header className="header home__header">
             
             <nav className="nav container1">
-                
+                <div className="nav__user">
+                        <img className="nav__user-image" src={USER} alt="User" />
+                    </div>
                 <Link to="/" className="nav__logo" onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }) }}>
                     <img className="nav__logo__mobile" src={LOGO} alt="Logo Naoplay" />
                     <img className="nav__logo__desktop" src={DESKTOP} alt="Logo Naoplay" />
@@ -94,11 +96,9 @@ const Header = () => {
                             </Link>
                         </ul>
                     </div>
-
-                    <Link to="/Login" className="nav__user">
-                        <img className="nav__user-image" src={USER} alt="User" />
-                    </Link>
                     
+                    
+
                     <div className="nav__toggle" aria-expanded={attribut}
                         onClick={() => ariaExpanded(`${attribut}`)}>
                             
@@ -109,9 +109,8 @@ const Header = () => {
                     
                 </div>
             </nav>
-            
+                    
         </header>
-        
     )
 }
 export default Header

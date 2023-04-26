@@ -21,6 +21,8 @@
         justify-content: center;
         height: 80vh;
         background: $primary;
+
+        
       }
       ::placeholder {
         font-size: 22px;
@@ -45,7 +47,10 @@
         padding-bottom: 0.5rem; 
         line-height: 1.5rem;
     }
-    button{
+    input:focus {
+        outline: none;
+    }
+    Link{
         width: 200px;
         height: 55px;
         text-decoration: none;
@@ -90,6 +95,7 @@
     input {
         width: 50%;   
         font-size: 25px;
+        
         font-weight: 700;
         font-family: $syne;
         font-weight: 700;

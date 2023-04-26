@@ -83,7 +83,9 @@ const Header = () => {
                             </li>
                             <Link className="btn" to="/">Nous contacter</Link>
                         </ul>
-                        
+                        <div className="nav__user">
+                <img className="nav__user-image" src={USER} alt="User" />
+            </div>
                         
                         <ul className="nav__list--second">
                             <Link to="/Login" className="nav__item">
@@ -94,10 +96,6 @@ const Header = () => {
                             </Link>
                         </ul>
                     </div>
-
-                    <Link to="/Login" className="nav__user">
-                        <img className="nav__user-image" src={USER} alt="User" />
-                    </Link>
                     
                     <div className="nav__toggle" aria-expanded={attribut}
                         onClick={() => ariaExpanded(`${attribut}`)}>
@@ -111,7 +109,6 @@ const Header = () => {
             </nav>
             
         </header>
-        
     )
 }
 export default Header

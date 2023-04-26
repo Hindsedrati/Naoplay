@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './login.scss';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 function Login () {
@@ -29,7 +29,7 @@ function Login () {
       <label>
         <input placeholder="**********"  type="password" name="password" value={password} onChange={handlePasswordChange} />
       </label>
-      <button to='/*'  type="submit">CONNEXION</button>
+      <Link to='/*' className='button' type="submit">CONNEXION</Link>
     </form>
   );
 };
