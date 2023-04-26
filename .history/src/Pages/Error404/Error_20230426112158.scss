@@ -66,7 +66,7 @@
 }
 @media screen and (min-width: 769px) and (max-width: 1900px){
     .error{
-        height: 91vh;
+        height: 100vh;
         display: grid;
         grid-template-columns: 1fr 1.2fr;
         text-align: center;
@@ -92,9 +92,9 @@
             color: $light;
         }
     }
-    .officiel{
+    img{
         width: 500px;
-        transform: scaleX(-1);
+        
         transition: transform 0.3s ease-out;
     }  
     h1{
