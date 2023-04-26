@@ -97,9 +97,8 @@
         img{
             width: 600px;
             transform: scaleX(-1);
-            transition: transform 0.3s ease-out;
         }  
-          
+            
         .secondpart{
             padding: 6rem;
             display: flex;
@@ -108,7 +107,7 @@
             align-items: flex-end;
             text-align: flex-end;
         }
-        &__bouton {
+        bouton {
             margin-left: 2rem;
             margin-bottom: 2rem;
             text-decoration: none;
@@ -124,11 +123,11 @@
             transition: transform 0.3s ease-out;
           }
           
-        &__bouton:hover {
+          .bouton:hover {
             transform: scale(1.1);
             background-color: $dark;
             color: $light;
-        }
+          }
     }
     .mobile{
         display: none;

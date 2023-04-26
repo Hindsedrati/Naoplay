@@ -97,9 +97,10 @@
         img{
             width: 600px;
             transform: scaleX(-1);
-            transition: transform 0.3s ease-out;
         }  
-          
+        img:hover{
+            transition: transform 0.3s ease-out;
+        }   
         .secondpart{
             padding: 6rem;
             display: flex;
