@@ -12,8 +12,6 @@ function Contact() {
   const [linkedin, setLinkedin] = useState('');
   const [message, setMessage] = useState('');
 
-
-
   // Fonction de gestionnaire d'événements pour la soumission du formulaire
   const handleSubmit = (e) => {
     e.preventDefault();

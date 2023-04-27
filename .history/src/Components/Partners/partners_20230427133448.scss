@@ -1,0 +1,82 @@
+@import '../../Sass/variables.scss';
+
+@font-face {
+  font-family: 'MonumentExtended';
+  src: url('../../Sass/fonts/MonumentExtended-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.partners {
+  background: $dark;
+  color: $light;
+  &__title {
+    font-family: $syne;
+    color: $light;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partners {
+   
+    &__title {
+      padding: 1rem;
+      font-size: 25px;
+      line-height: 30px;
+      font-weight: bold;
+    }
+    &__icons img{
+      width: 50px;
+
+    }
+    &__icons{
+      color: #fff;
+      display: flex;
+      padding: 0rem 3rem 1rem;
+      justify-content: space-around;
+      width: 200%;
+      animation: Scroll 10s linear infinite;
+    }
+    
+    @keyframes Scroll {
+        0%{
+          transform: translate(-100%);
+        }
+        100% {
+          transform: translate(0%);
+        }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .partners{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    
+    &__image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150%;
+      overflow-x: hidden;
+      position: relative;
+    }
+    &__title{
+      padding: 2rem;
+    }
+    &__icons img{
+      width: 90px;
+    }
+    &__icons{
+      color: #fff;
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem 0;
+      width: 100%;
+      animation: Scroll 10s linear infinite;
+    }
+    
+  }
+  
+}

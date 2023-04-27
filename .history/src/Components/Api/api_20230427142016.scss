@@ -1,0 +1,147 @@
+@import '../../Sass/variables.scss';
+@font-face {
+    font-family: 'MonumentExtended';
+    src: url('../../Sass/fonts/MonumentExtended-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    
+    margin: 0;
+}
+
+.api {
+    padding: 1rem 1rem;
+    background: $dark;
+    color: $light;
+    &__btn {
+        display: inline-block;
+        width: fit-content;
+        padding: 1rem 2rem;
+        color: $dark;
+        background-color: $light;
+        font-family: $syne;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    &__title {
+        font-family: 'MonumentExtended', sans-serif;
+    }
+    
+    &__content::-webkit-scrollbar {
+        width: 0;
+    }
+    @media screen and (max-width: 768px) {
+        .api {
+            &__content {
+                &__child {
+                     min-width: 100%;
+                 }
+                 .arrow_1 {
+                     position: absolute;
+                     bottom: 2px;
+                     right: 10px;
+                     font-size: 30px;
+                     color: $dark;
+                     background: $light;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     border-radius: 50%;
+                     width: 40px;
+                     height: 40px;
+                 }
+                 .arrow_2 {
+                     position: absolute;
+                     bottom: 2px;
+                     right: -23rem;
+                     font-size: 30px;
+                     background: $light;
+                     color: $dark;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     border-radius: 50%;
+                     width: 40px;
+                     height: 40px;
+                 }
+             }
+            &__image{
+                &__img{
+                    display: none;
+                }
+            }
+            
+            &__title {
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: 400;
+            }
+            &__content{
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 2rem;
+                font-family: $syne;
+                font-size: 23px;
+                font-weight: 500;
+                line-height: 30px;
+                overflow: hidden;
+                position: relative;
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .api{
+        height: 70vh;
+        border-right: 25rem solid white;
+        padding: 6rem;
+        &__content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            font-size: 23px;;
+        }
+        &__title{
+            font-size: 50px;
+        }
+        &__image{
+            &__img{
+                width: 850px;
+                left: 65%;
+                position: absolute;
+                transform: translateY(-20%);
+            }
+        }
+    }
+    .arrow_1{
+        display: none;
+    }
+    .arrow_2{
+        display: none;
+    }
+}
+@media screen and (min-width: 1900px) {
+    .api{
+        height: 55vh;
+        border-right: 30rem solid white;
+        padding: 6rem;
+        &__content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            font-size: 23px;
+        }
+        &__title{
+            font-size: 50px;
+        }
+        &__image{
+            &__img{
+                height: 55vh;
+                left: 65%;
+                position: absolute;
+                transform: translateY(-30%);
+            }
+        }
+    }
+    
+}
