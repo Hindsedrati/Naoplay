@@ -1,0 +1,241 @@
+@import '../../sass/variables';
+
+@font-face {
+    font-family: 'MonumentExtended';
+    src: url('../../Sass/fonts/MonumentExtended-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer {
+    color: $light;
+    position: relative;
+
+   
+
+    &__bg--image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url("../../assets/eye-naoplay.webp") no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    &__elements {
+        h2,p {
+            font-family: $syne;
+        }
+
+        h1 {
+            font-family: 'MonumentExtended', sans-serif;
+            text-transform: uppercase;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        gap: 2rem;
+
+        a {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            text-decoration: none;
+            color: $dark;
+            background-color: $light;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+        a:hover{
+            transform: scale(1.1);
+            background-color: $dark;
+            color: $light;
+        }
+    }
+
+    &__mentions {
+        font-family: $Dm;
+        text-decoration: none;
+        color: $light;
+        
+    }
+
+   
+    @media screen and (max-width: 768px) {
+        .container {
+            padding: 1rem;
+            width: 90%;
+        }
+        .footer {
+            &__links{
+                &__top{
+                    display: none;
+                }
+            }
+            &__btn {
+                display: inline-block;
+                width: fit-content;
+                padding: 1rem 2rem;
+                margin-bottom: 2.5rem;
+                color: $dark;
+                background-color: $light;
+                font-family: $syne;
+                font-weight: 700;
+                text-decoration: none;
+            }
+            &__mentions {
+                display: block;
+                font-size: 17px;
+                line-height: 25px;
+                font-weight: 500;
+                margin-bottom: 1rem;
+                margin-left: 1rem;
+            }
+
+            &__copyright {
+                background: $dark;
+                color: white;
+                line-height: 20px;
+                font-family: $Dm;
+                justify-content: space-evenly;
+                padding: 1.5rem 0 1.5rem 2rem;
+                small {
+                    display: block;
+                }
+            }
+
+            &__btn {
+                font-size: 15px;
+            }
+
+            
+                h1 {
+                    font-size: 30px;
+                    line-height: 30px;
+                    font-weight: Medium;
+                }
+
+                h2 {
+                    font-size: 25px;
+                    line-height: 30px;
+                    font-weight: 500;
+
+                }
+                
+            
+
+        }
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1900px){
+    .footer{
+        padding: 15rem 10rem 2rem 7rem ;
+        &__soustitre{
+            font-size: 36px;
+            font-weight: 100;
+            line-height: 36px;
+        }
+        &__copyright{
+            color: $light;
+            font-size: 20px;
+            line-height: 33px;
+            font-weight: medium;
+        }
+
+        &__copyright:hover{
+            color: $dark;
+            cursor: pointer;
+        }
+
+        .container {
+            padding-bottom: 5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        &__btn {
+            display: inline-block;
+            width: fit-content;
+            padding: 1rem 2rem;
+            color: $dark;
+            background-color: $light;
+            font-family: $syne;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.3s ease-out;
+        }
+        &__btn:hover{
+            transform: scale(1.1);
+            background-color: $dark;
+            color: $light;
+        }
+        &__links{
+            flex-direction: column;
+            text-align: end;
+            &__top{
+                display: block;
+                text-align: end;
+                margin-bottom: 2rem;
+                color: $light;
+                font-size: 25px;
+                font-family: $Dm;
+            }
+        } 
+        
+        &__elements{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        
+       
+        &__icons{
+            justify-content: end;
+        }
+        .mentions{
+            display: flex;
+            justify-content: space-between;
+            gap: 18rem;
+            font-size: 20px;
+            font-weight: medium;
+        }
+        &__mentions:hover{
+            color: $dark;
+        }
+        
+        
+    }
+    
+    
+    
+    .informations{
+        justify-content: space-between;
+        display: flex;
+       
+    }    
+    p {
+        font-size: 30px;
+        font-weight: 100;
+        line-height: 36px;
+    }
+    p:not([href]){
+        pointer-events: none;
+    }   
+    
+    h2:not([href]){
+        pointer-events: none;
+    }   
+    h1:not([href]){
+        pointer-events: none;
+    }   
+         
+}
