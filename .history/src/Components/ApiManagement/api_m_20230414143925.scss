@@ -6,6 +6,10 @@
     font-style: normal;
 }
 
+html, body {
+    overflow-x: hidden;
+} 
+  
 .api__management{
     background-color: $light;
     color: $dark;
@@ -16,6 +20,7 @@
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1900px){
+    
     .cercle {
         position: absolute;
         top: 0;

@@ -106,7 +106,7 @@ ul li {
                 border-radius: 30px;
 
                 &__second {
-                    transform: translateX(17%);
+                    transform: translateX(18%);
                     width: 28px;
 
                 }
@@ -228,8 +228,7 @@ ul li {
 
                 &__second {
                     transform: translateX(17%);
-                    width: 30px;
-                    
+                    width: 28px;
 
                 }
             }
@@ -309,11 +308,6 @@ ul li {
             font-family: $syne;
             font-weight: 700;
             text-decoration: none;
-        }
-        .btn:hover {
-            transform: scale(1.1);
-            background-color: $primary;
-            color: $light;
         }
     }
 
