@@ -14,23 +14,66 @@ function api__management() {
   }*/
 
   return (
-    <section className='api__management'>
-        
-        <div className='api__management__left'>
-        <a className='link__left api__management__link' href='/'><img src={panier} className='api__management__logo' alt='panier' />MONÉTISATION</a>
-        <a className='link__left api__management__link' href ='/'><img src={user} className='api__management__logo' alt='user' />SUIVI DES UTILISATEURS-CONSOMMATEURS API</a>
-        <a className='link__left api__management__link' href ='/'><img src={cadena} className='api__management__logo' alt='cadena' />AUTHENTIFICATIONS</a>
-        </div>
-          <div className='cercle'></div>
-          <h1 className='api__management__title'> API <br /> MANAGEMENT</h1>
-          
-        <div className='api__management__right'>
-        <a className=' api__management__link' href='/'><img src={cloud} className='api__management__logo' alt='maison' />SERVICES & PLATEFORMES CLOUD</a>
-        <a className=' api__management__link' href='/'><img src={bdd} className='api__management__logo' alt='maison' />INFRASTRUCTURES CLOUD</a>
-        <a className=' api__management__link' href='/'><img src={maison} className='api__management__logo' alt='maison' />INFRASTRUCTURES APPLICATIONS ON-PREMISE</a>
-        </div>
+    <div className='api__management'>
 
-    </section>
+      <div className='api__management__left'>
+
+        <a className='api__management__link' href='/'>
+          <span>MONÉTISATION</span>
+          <div className='api__management__logo'>
+            <img src={panier} alt='panier' />
+          </div>
+        </a>
+
+        <a className='api__management__link' href='/'>
+          <span>SUIVI DES UTILISATEURS-CONSOMMATEURS API</span>
+          <div className='api__management__logo'>
+            <img src={user} alt='user' />
+          </div>
+        </a>
+
+        <a className='api__management__link' href='/'>
+          <span>AUTHENTIFICATIONS</span>
+          <div className='api__management__logo'>
+            <img src={cadena} alt='cadena' />
+          </div>
+        </a>
+
+      </div>
+
+      <div className='api__management__center'>
+        <h2 className='api__management__title'> API <br /> MANAGEMENT</h2>
+        <div className='cercle'></div>
+      </div>
+
+
+      <div className='api__management__right'>
+
+        <a className=' api__management__link' href='/'>
+          <div className='api__management__logo'>
+            <img src={cloud} alt='PLATEFORMES CLOUD' />
+          </div>
+          <span>SERVICES & PLATEFORMES CLOUD</span>
+        </a>
+
+        <a className='api__management__link' href='/'>
+          <div className='api__management__logo'>
+            <img src={bdd} alt='cloud' />
+          </div>
+          <span>INFRASTRUCTURES CLOUD</span>
+        </a>
+
+        <a className='api__management__link' href='/'>
+          <div className='api__management__logo'>
+            <img src={maison} alt='application' />
+          </div>
+          <span>INFRASTRUCTURES APPLICATIONS ON-PREMISE</span>
+        </a>
+
+      </div>
+
+    </div>
+
   );
 }
 

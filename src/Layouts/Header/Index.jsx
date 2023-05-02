@@ -95,7 +95,7 @@ const Header = () => {
 
                     </ul>
 
-                    <Link className="btn" to="/">Nous contacter</Link>
+                    <Link className="btn" to="/Contact">Nous contacter</Link>
 
 
                     <ul className="nav__list--second">

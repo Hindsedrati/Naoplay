@@ -7,8 +7,7 @@ import { FaEnvelope } from "react-icons/fa";
 function Footer() {
     return (
         <footer className="footer">
-            <div className="footer__bg--image">
-            </div>
+            <div className="footer__bg--image"></div>
 
             <div className="footer__elements container">
                 <div className="footer__titles">
@@ -20,19 +19,20 @@ function Footer() {
                     <Link to="/Contact" className="footer__btn">NOUS CONTACTER</Link>
                     <p>NAOPLAY SAS</p>
                     <p>13 rue de la Trémoille, 75008 Paris</p>
-                   
-                  
+
+
                     <div className="footer__icons">
-                    <a href="https://www.linkedin.com/company/naoplay/" target="_blank" rel="noreferrer">
-                        <RiLinkedinFill />
-                    </a>
-                    <a href="mailto:contact@naoplay.fr/" target="_blank" rel="noreferrer">
-                        < FaEnvelope />
-                    </a>
+                        <a href="https://www.linkedin.com/company/naoplay/" target="_blank" rel="noreferrer">
+                            <RiLinkedinFill />
+                        </a>
+                        <a href="mailto:contact@naoplay.fr/" target="_blank" rel="noreferrer">
+                            < FaEnvelope />
+                        </a>
                     </div>
-                
-                    </div> 
-                </div>    
+
+                </div>
+            </div>
+
             <div className='informations'>
                 <div className='mentions'>
                     <a className='footer__mentions' href='/'>Politique de confidentialité</a>
@@ -44,7 +44,7 @@ function Footer() {
                 </div>
             </div>
 
-            
+
         </footer>
     )
 }

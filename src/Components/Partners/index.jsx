@@ -15,10 +15,13 @@ import Wib from '../../assets/wib.png';
 function Partners() {
   return (
     <section id='partenaires' className='partners'>
-      <div> 
-      <h1 className='partners__title'>Environnements techniques et partenaires</h1>
+
+      <div className='partners__content'>
+        <h3>Environnements techniques et partenaires</h3>
       </div>
+
       <div className='partners__image'>
+
         <div className='partners__icons'>
           <img src={Apiida} alt='apiida'></img>
           <img src={Apigee} alt='apigee'></img>
@@ -30,7 +33,9 @@ function Partners() {
           <img src={Apiable} alt='apiable'></img>
           <img src={Wib} alt='wib'></img>
         </div>
+
       </div>
+
     </section>
   )
 }

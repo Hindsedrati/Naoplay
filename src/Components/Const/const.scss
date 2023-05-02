@@ -1,25 +1,18 @@
 @import '../../Sass/variables.scss';
-@font-face {
-  font-family: 'MonumentExtended';
-  src: url('../../Sass/fonts/MonumentExtended-Regular.otf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 .home {
-  padding: 4rem 1rem 2rem 2rem;
+  height: calc(100vh - 80px);
   color: $light;
-  background-image: url('../../assets/eye-naoplay.webp');
+  background-image: url('../../assets/vision_naoplay.webp');
   background-size: cover;
   background-position: center;
-  
 
   h1 {
     font-weight: bold;
     font-family: 'MonumentExtended', sans-serif;
   }
-  h2{
+
+  h2 {
     font-family: $syne;
   }
 
@@ -27,7 +20,6 @@
     text-decoration: none;
     color: $dark;
     display: inline-block;
-    margin-top: 3rem;
     padding: 0.75rem 1.5rem;
     background-color: $light;
     font-family: $syne;
@@ -42,36 +34,36 @@
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .home {
+
+    h1 {
+      font-size: 70px;
+      font-weight: 500;
+    }
+
+    h2 {
+      margin-top: 80px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+
+    &__btn {
+      margin-top: 80px;
+    }
+  }
+}
+
 /* Code ajouté pour centrer en version mobile */
 @media screen and (max-width: 768px) {
   .home {
-    padding: 0 1rem;
-    height: 100vh;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    &__title{
-      display: none;
-    }
-    &__btn {
-      text-decoration: none;
-      color: $dark;
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.75rem 1.5rem;
-      background-color: $light;
-      font-family: $syne;
-      font-size: 1rem;
-      font-weight: 700;
-      transition: background-color 0.3s ease;
-  
-      &:hover {
-        background-color: $dark;
-        color: $light;
-      }
-      
-    }
+
     h1 {
       font-size: 30px;
       line-height: 40px;
@@ -79,37 +71,15 @@
     }
 
     h2 {
+      margin-top: 50px;
       font-size: 20px;
-      line-height: 25px;
       font-weight: 500;
       font-family: $Dm;
-    }
-   
-    }
-  
-  
-}
-@media screen and (min-width: 769px) and (max-width: 1900px) {
-  .home{
-    height: 80vh;
-    padding: 2rem 5rem 2rem 5rem;
-    
-    &__title{
-      padding: 2rem 20rem 0rem 0 ;
-      font-size: 80px;
-      font-weight: 700;
-      line-height: 80px;
-      &__mobile{
-        display: none;
-      }
-    }
-    h2{
-      padding: 2rem 20rem 0rem 0 ;
-      font-size: 30px;
-      font-weight: 700;
-      line-height: 40px;
+      line-height: 1.6;
     }
 
-
+    &__btn {
+      margin-top: 30px;
+    }
   }
 }

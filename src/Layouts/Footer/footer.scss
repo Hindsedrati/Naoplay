@@ -1,17 +1,9 @@
-@import '../../sass/variables';
-
-@font-face {
-    font-family: 'MonumentExtended';
-    src: url('../../Sass/fonts/MonumentExtended-Regular.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import '../../Sass/variables.scss';
 
 .footer {
+    height: 100vh;
     color: $light;
     position: relative;
-
-   
 
     &__bg--image {
         position: absolute;
@@ -19,13 +11,14 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: url("../../assets/eye-naoplay.webp") no-repeat;
+        background: url("../../assets/vision_naoplay.webp") no-repeat;
         background-position: center;
         background-size: cover;
         z-index: -1;
     }
 
     &__elements {
+
         h2,p {
             font-family: $syne;
         }
@@ -53,7 +46,8 @@
             align-items: center;
             margin-bottom: 4rem;
         }
-        a:hover{
+
+        a:hover {
             transform: scale(1.1);
             background-color: $dark;
             color: $light;
@@ -64,21 +58,23 @@
         font-family: $Dm;
         text-decoration: none;
         color: $light;
-        
+
     }
 
-   
+
     @media screen and (max-width: 768px) {
         .container {
             padding: 1rem;
             width: 90%;
         }
+
         .footer {
-            &__links{
-                &__top{
+            &__links {
+                &__top {
                     display: none;
                 }
             }
+
             &__btn {
                 display: inline-block;
                 width: fit-content;
@@ -90,6 +86,7 @@
                 font-weight: 700;
                 text-decoration: none;
             }
+
             &__mentions {
                 display: block;
                 font-size: 17px;
@@ -106,6 +103,7 @@
                 font-family: $Dm;
                 justify-content: space-evenly;
                 padding: 1.5rem 0 1.5rem 2rem;
+
                 small {
                     display: block;
                 }
@@ -115,46 +113,50 @@
                 font-size: 15px;
             }
 
-            
-                h1 {
-                    font-size: 30px;
-                    line-height: 30px;
-                    font-weight: Medium;
-                }
 
-                h2 {
-                    font-size: 25px;
-                    line-height: 30px;
-                    font-weight: 500;
+            h1 {
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: Medium;
+            }
 
-                }
-                
-            
+            h2 {
+                font-size: 25px;
+                line-height: 30px;
+                font-weight: 500;
+
+            }
+
+
 
         }
     }
 }
-@media screen and (min-width: 769px) and (max-width: 1900px){
-    .footer{
-        padding: 15rem 10rem 2rem 7rem ;
-        &__soustitre{
+
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+    .footer {
+        padding: 15rem 10rem 2rem 7rem;
+
+        &__soustitre {
             font-size: 36px;
             font-weight: 100;
             line-height: 36px;
         }
-        &__title{
+
+        &__title {
             letter-spacing: 1px;
             font-size: 70px;
-           
+
         }
-        &__copyright{
+
+        &__copyright {
             color: $light;
             font-size: 20px;
             line-height: 33px;
             font-weight: medium;
         }
 
-        &__copyright:hover{
+        &__copyright:hover {
             color: $dark;
             cursor: pointer;
         }
@@ -164,7 +166,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
-        
+
         &__btn {
             display: inline-block;
             width: fit-content;
@@ -176,15 +178,18 @@
             text-decoration: none;
             transition: transform 0.3s ease-out;
         }
-        &__btn:hover{
+
+        &__btn:hover {
             transform: scale(1.1);
             background-color: $dark;
             color: $light;
         }
-        &__links{
+
+        &__links {
             flex-direction: column;
             text-align: end;
-            &__top{
+
+            &__top {
                 display: block;
                 text-align: end;
                 margin-bottom: 2rem;
@@ -192,55 +197,55 @@
                 font-size: 25px;
                 font-family: $Dm;
             }
-        } 
-        
-        &__elements{
+        }
+
+        &__elements {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
-        
-        
-       
-        &__icons{
+
+
+
+        &__icons {
             justify-content: end;
         }
-        .mentions{
+
+        .mentions {
             display: flex;
             justify-content: space-between;
             gap: 18rem;
             font-size: 20px;
             font-weight: medium;
         }
-        &__mentions:hover{
+
+        &__mentions:hover {
             color: $dark;
         }
-        
-        
+
+        p {
+            font-size: 30px;
+            font-weight: 100;
+            line-height: 36px;
+        }
+
+        p:not([href]) {
+            pointer-events: none;
+        }
+
+        h2:not([href]) {
+            pointer-events: none;
+        }
+
+        h1:not([href]) {
+            pointer-events: none;
+        }
     }
-    
-    
-    
-    .informations{
+
+    .informations {
         justify-content: space-between;
         display: flex;
-       
-    }    
-    p {
-        font-size: 30px;
-        font-weight: 100;
-        line-height: 36px;
+
     }
-    p:not([href]){
-        pointer-events: none;
-    }   
-    
-    h2:not([href]){
-        pointer-events: none;
-    }   
-    h1:not([href]){
-        pointer-events: none;
-    }   
-         
 }

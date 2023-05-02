@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './style.css';
+import './style.scss';
 
 import Contact from './Pages/Contact/index'
 import Login from './Pages/Login/index'
@@ -24,7 +24,6 @@ root.render(
         <Route path="/Login" element={<Login />} />
         <Route path="/*" element={<Error404 />} />
         <Route path="/Error403" element={<Error403 />} />
-        
       </Routes>
       <Footer />
     </Router>

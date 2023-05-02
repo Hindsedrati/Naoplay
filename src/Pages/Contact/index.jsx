@@ -18,6 +18,7 @@ function Contact() {
     // Envoyer les données du formulaire via une requête HTTP, puis afficher le message de confirmation
 
   };
+  
   return (
     <section id="contact" className='contact'>
 

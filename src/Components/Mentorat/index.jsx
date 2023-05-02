@@ -7,25 +7,30 @@ import vert from '../../assets/vert.webp';
 
 function Mentorat() {
     return (
+
         <section id='mentorat' className='mentorat'>
-            <h1 className='mentorat__title'>LE MENTORAT NAOPLAY</h1>
-            <article className='first article1 mentorat__content'>
-                <div className='mentorat__content__child'>
+
+            <div className='first'>
+                <h2 className='mentorat__title__mobile'>LE MENTORAT NAOPLAY</h2>
+
+                <div className='first__content__child'>
                     <img src={blanc} alt='blanc' />
                     <img src={jaune} alt='jaune' />
                     <img src={orange} alt='orange' />
                     <img src={vert} alt='vert' />
                 </div>
-            </article>
-            <article className='article2'>
-                <div className='second mentorat__content__child'>
-                <h1 className='mentorat__title1'>LE MENTORAT NAOPLAY</h1>
-                    <h2>Le mentorat Naoplay poursuit différents objectifs:</h2>
+            </div>
+
+            <article className='second'>
+                <div className='second__content__child'>
+                    <h2>LE MENTORAT NAOPLAY</h2>
+                    <h3>Le mentorat Naoplay poursuit différents objectifs:</h3>
                     <p>que nos consultant•e•s soient exposé•e•s à l'ensemble de l'écosystème API et pas uniquement « super experts » de la solution utilisée chez leur client </p>
                     <p>que nos consultant•e•s soient accompagné•e•s dans leurs missions</p>
                     <p>une certification interne récompense les consultants au cours de leurs programme et leur permet de mettre en avant facilement leurs compétences</p>
                 </div>
             </article>
+
         </section>
     )
 }

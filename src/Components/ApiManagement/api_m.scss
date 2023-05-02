@@ -1,174 +1,148 @@
 @import '../../Sass/variables.scss';
-@font-face {
-    font-family: 'MonumentExtended';
-    src: url('../../Sass/fonts/MonumentExtended-Regular.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
-.api__management{
+.api__management {
+    height: calc(100vh - 250px);
     background-color: $light;
     color: $dark;
 }
+
+@media screen and (min-width: 769px) {
+
+    .api__management {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+
+        &__left {
+            width: 30%;
+            display: block;
+            text-align: end;
+        }
+
+        &__center {
+            position: relative;
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+            .api__management__title {
+                display: flex;
+                align-items: center;
+                font-family: 'MonumentExtended', sans-serif;
+                font-size: 48px;
+                font-weight: 500;
+            }
+
+            .cercle {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 300px;
+                height: 300px;
+                margin: auto;
+                //background: red;
+                border-radius: 50%;
+                z-index: 2;
+                animation: zoom 1.5s infinite;
+            }
+
+            @keyframes zoom {
+                0% {
+                    border: 1px solid aqua;
+                    opacity: .8;
+                }
+                
+                15% {
+                    border: 1px solid aqua;
+                    transform: scale(1.2);
+                    opacity: .6;
+                }
+
+                30% {
+                    border: 1px solid aqua;
+                    transform: scale(1.4);
+                    opacity: .4;
+                }
+
+                45% {
+                    border: 1px solid aqua;
+                    transform: scale(1.6);
+                    opacity: 1;
+                }
+
+                60% {
+                    border: 1px solid aqua;
+                    transform: scale(1.8);
+                    opacity: .8;
+                }
+
+                75% {
+                    border: 1px solid aqua;
+                    transform: scale(2);
+                    opacity: .6;
+                }
+
+                90% {
+                    border: 1px solid aqua;
+                    transform: scale(2.2);
+                    opacity: .4;
+                }
+    
+                100% {
+                    border: 1px solid aqua;
+                    transform: scale(2.5);
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__right {
+            width: 30%;
+            display: block;
+            text-align: start;
+        }
+
+        &__link {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            margin: 2rem 0rem;
+            font-family: $syne;
+            color: #000F14;
+            z-index: 10;
+
+            span {
+                padding: 0 1rem;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+
+        &__logo {
+            width: 80px;
+            height: 80px;
+            transition: transform 0.3s ease-in-out;
+
+            img {
+                width: 80px;
+                height: auto;
+            }
+        }
+
+        &__logo:hover {
+            transform: scale(1.1);
+            color: $primary;
+        }
+    }
+}
+
+
 @media screen and (max-width: 768px) {
-    .api__management{
+    .api__management {
         display: none;
     }
 }
-@media screen and (min-width: 769px) and (max-width: 1900px){
-    .cercle {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        overflow: hidden;
-    }
-      
-      .cercle:before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
-        border-radius: 50%;
-        color: aqua;
-        background-color: red;
-        opacity: 0.5;
-        animation: zoom 10s infinite ease-in-out;
-      }
-      
-      @keyframes zoom {
-        0% {
-          transform: translate(-50%, -50%) scale(1);
-          opacity: 0.5;
-        }
-        50% {
-          transform: translate(-50%, -50%) scale(5);
-          opacity: 0;
-        }
-        100% {
-          transform: translate(-50%, -50%) scale(1);
-          opacity: 0.5;
-        }
-      }
-      
-    .api__management{
-        height: 50vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 4rem ;
-        &__vision{
-            background-color: aqua;
-            display: flex;
-            margin-top: 20px;
-        }   
-        &__title{
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 2rem;
-            padding: 0 10rem 0 8rem;
-            text-align: center;
-            justify-content: space-between;
-            font-family: 'MonumentExtended', sans-serif;
-            font-size: 40px;
-            font-weight: 100;
-        }
-        /*&__title1{
-            display: block;
-            flex-direction: row-reverse;
-            margin-top: 10px; /* add some margin to create a space between h1 and h3 
-            font-family: 'MonumentExtended', sans-serif;
-            font-size: 20px; /* modify the font size to fit your design 
-            font-weight: 100;
-            display: inline-block;
-        }*/
-        &__logo{
-            transition: transform 0.3s ease-in-out;
-            
-            
-            margin-right: 10px;
-        }
-        &__logo:hover{
-            transform: scale(1.1);
-            color: $primary;
-        }
-        &__link{
-            scroll-behavior: smooth;
-            display: inline-flex;
-            margin-left: 2rem;
-            text-decoration: none;
-            align-items: center;
-            color: #000F14;
-            margin: 1rem 0rem;
-            font-family: $syne;
-            font-size: 25px;
-            font-weight: bold;
-        }
-        
-    }
-   
-}
-
-
-
-
-
-@media screen and (min-width: 1901px) {
-    .api__management{
-        height: 100vh;
-        display: flex;
-        
-        justify-content: center;
-        align-items: center;
-        
-        &__left{
-            display: block;
-            align-items: flex-end;
-        }
-        &__title{
-            margin-bottom: 2rem;
-            padding: 5rem;
-            display: inline-block; /* or block */
-            text-align: center;
-            justify-content: space-between;
-            font-family: 'MonumentExtended', sans-serif;
-            font-size: 40px;
-            font-weight: 100;
-        }
-        
-        /*&__title1{
-            display: block;
-            flex-direction: row-reverse;
-            margin-top: 10px; /* add some margin to create a space between h1 and h3 
-            font-family: 'MonumentExtended', sans-serif;
-            font-size: 20px; /* modify the font size to fit your design 
-            font-weight: 100;
-            display: inline-block;
-        }*/
-        &__logo{
-            transition: transform 0.3s ease-in-out;
-            width: 64px;
-            height: 60px;
-            margin-right: 10px;
-        }
-        &__logo:hover{
-            transform: scale(1.1);
-            
-            color: $primary;
-        }
-        &__link{
-            scroll-behavior: smooth;
-            display: flex;
-            text-decoration: none;
-            color: #000F14;
-            margin: 1rem 0rem;
-        }
-        
-    }
-    
-}
-  
