@@ -62,7 +62,7 @@ ul li {
 
 /*desktop*/
 
-@media screen and (min-width: 769px) and (max-width: 1900px) {
+@media screen and (min-width: 769px) {
 
     .nav {
         padding: 12px 80px 0 80px;
@@ -188,7 +188,6 @@ ul li {
         margin-left: 4em;
     }
 }
-/*grand écran*/
 @media screen and (min-width: 1901px) {
 
     .nav {
@@ -245,8 +244,7 @@ ul li {
 
         .nav {
             &__list {
-                
-                padding: 7rem 2rem 2rem 7rem;
+
                 &--second {
                     display: none;
                 }
@@ -256,7 +254,7 @@ ul li {
 
     .nav__list {
         height: 100%;
-        
+        background-color: red;
         padding: 12px 24px 0 24px; 
         position: fixed;
         top: 0;

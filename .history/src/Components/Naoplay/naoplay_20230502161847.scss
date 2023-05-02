@@ -166,7 +166,7 @@
   .naoplay {
     padding: 8rem;
     height: auto;
-    
+    background-color: red;
     display: flex;
     justify-content: center;
 
@@ -182,13 +182,13 @@
     }
 
     &__txt {
-      padding: 5rem;
+      padding: 3rem;
       font-weight: 500;
       font-size: 22px;
     }
 
     &__soustitres {
-      padding: 5rem;
+      padding: 3rem;
       font-weight: bold;
       font-size: 26px;
     }

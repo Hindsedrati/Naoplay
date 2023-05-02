@@ -54,10 +54,11 @@
     width: 0;
   }
 }
-/*écran PC*/
+
 @media screen and (min-width: 769px) and (max-width: 1900px) {
   .naoplay {
-    
+    height: auto;
+    background: $primary;
     display: flex;
     justify-content: center;
 
@@ -161,12 +162,10 @@
     }
   }
 }
-/*Grand Ecran*/
+
 @media screen and (min-width: 1901px) {
   .naoplay {
-    padding: 8rem;
-    height: auto;
-    
+
     display: flex;
     justify-content: center;
 
@@ -182,13 +181,11 @@
     }
 
     &__txt {
-      padding: 5rem;
       font-weight: 500;
       font-size: 22px;
     }
 
     &__soustitres {
-      padding: 5rem;
       font-weight: bold;
       font-size: 26px;
     }

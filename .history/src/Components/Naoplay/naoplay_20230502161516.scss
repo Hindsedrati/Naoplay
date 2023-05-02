@@ -164,9 +164,9 @@
 /*Grand Ecran*/
 @media screen and (min-width: 1901px) {
   .naoplay {
-    padding: 8rem;
+    padding: 2rem;
     height: auto;
-    
+    background-color: red;
     display: flex;
     justify-content: center;
 
@@ -182,13 +182,11 @@
     }
 
     &__txt {
-      padding: 5rem;
       font-weight: 500;
       font-size: 22px;
     }
 
     &__soustitres {
-      padding: 5rem;
       font-weight: bold;
       font-size: 26px;
     }

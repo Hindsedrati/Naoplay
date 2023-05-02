@@ -54,10 +54,10 @@
     width: 0;
   }
 }
-/*écran PC*/
+
 @media screen and (min-width: 769px) and (max-width: 1900px) {
   .naoplay {
-    
+
     display: flex;
     justify-content: center;
 
@@ -161,118 +161,7 @@
     }
   }
 }
-/*Grand Ecran*/
-@media screen and (min-width: 1901px) {
-  .naoplay {
-    padding: 8rem;
-    height: auto;
-    
-    display: flex;
-    justify-content: center;
 
-    &__intro {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
-
-    &__title {
-      font-size: 48px;
-      letter-spacing: 2px;
-    }
-
-    &__txt {
-      padding: 5rem;
-      font-weight: 500;
-      font-size: 22px;
-    }
-
-    &__soustitres {
-      padding: 5rem;
-      font-weight: bold;
-      font-size: 26px;
-    }
-
-    &__image img {
-      width: 420px;
-      animation-name: move;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-timing-function: ease-in-out;
-
-      @keyframes move {
-        from {
-          transform: translateY(-20px);
-        }
-
-        to {
-          transform: translateY(0);
-        }
-      }
-    }
-
-    &__content {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-end;
-      overflow: hidden;
-    }
-
-    .show__first {
-
-      .first__child {
-        display: block;
-      }
-
-      .second__child {
-        display: none;
-      }
-    }
-
-    .show__second {
-
-      .first__child {
-        display: none;
-      }
-
-      .second__child {
-        display: block;
-      }
-    }
-
-    &__button {
-      width: 48px;
-      height: 48px;
-      background-color: $primary;
-      border-radius: 24px;
-    }
-
-    &__button__default svg {
-      width: 100%;
-      height: auto;
-      color: #fff;
-    }
-
-    &__button__next svg {
-      width: 100%;
-      height: auto;
-      color: #fff;
-      transform: rotate(0deg);
-      transition: 0.6s ease;
-    }
-
-    &__button__prev svg {
-      width: 100%;
-      height: auto;
-      color: #fff;
-      transform: rotate(-180deg);
-      transition: 0.6s ease;
-    }
-  }
-
-}
 
 @media screen and (max-width: 768px) {
   .naoplay {

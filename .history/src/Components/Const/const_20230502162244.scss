@@ -87,7 +87,7 @@
 
 @media screen and (min-width: 1901px) {
   .home {
-    height: 70vh;
+    height: calc(100vh - 50px);
     h1 {
       font-size: 70px;
       font-weight: 500;

@@ -1,7 +1,7 @@
 @import '../../Sass/variables.scss';
 
 .home {
-  
+  height: calc(100vh - 80px);
   color: $light;
   background-image: url('../../assets/vision_naoplay.webp');
   background-size: cover;
@@ -58,7 +58,6 @@
 /* Code ajouté pour centrer en version mobile */
 @media screen and (max-width: 768px) {
   .home {
-    height: calc(100vh - 80px);
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -87,7 +86,7 @@
 
 @media screen and (min-width: 1901px) {
   .home {
-    height: 70vh;
+
     h1 {
       font-size: 70px;
       font-weight: 500;
