@@ -158,7 +158,7 @@ ul li {
         }
 
         .nav__item {
-            
+            font-family: $syne;
             text-decoration: none;
             font-size: 56px;
             color: $light;
@@ -188,7 +188,9 @@ ul li {
         transform: translateX(0%);
     }
 
-    
+    .ecart {
+        margin-left: 4em;
+    }
 }
 /*grand écran*/
 @media screen and (min-width: 1901px) {
@@ -435,10 +437,7 @@ ul li {
         }
 
         &__item {
-            
-            margin-bottom: 2rem;
-            font-family: $syne;
-            font-weight: bold;
+            margin-bottom: 1rem;
             font-size: 25px;
             line-height: 30px;
             text-decoration: none;
@@ -451,8 +450,5 @@ ul li {
     .btn {
         display: none;
     }
-    .ecart {
-        padding: 1rem;
-        margin-left: 2em;
-    }
+
 }

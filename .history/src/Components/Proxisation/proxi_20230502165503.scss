@@ -25,7 +25,7 @@
 
 
 /*---Media pour tablettes et ordinateurs portables*/
-@media screen and (min-width: 769px) and (max-width: 1900px) {
+@media screen and (min-width: 769px) and (min-width: 1900px) {
 
     .proxi{
         min-height: 100vh;
@@ -62,7 +62,6 @@
         }
         
         &__diagramme{
-            background: $light;
             position: absolute;
             top: 0;
             bottom: 0;
@@ -82,7 +81,6 @@
             }
 
             img {
-                padding: 2rem;
                 width: 100%;
                 height: auto;
             }
@@ -106,86 +104,6 @@
     }
 } 
 
-@media screen and (min-width: 1901px) {
-
-    .proxi{
-        min-height: 100vh;
-        position: relative;
-        padding: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        color: $light;
-        background: $primary;
-      
-        &__title{
-            text-align: start;
-            font-family: 'MonumentExtended', sans-serif;
-            font-size: 56px;
-        }
-
-        &__content {
-            width: 100%;
-            display: grid;
-            gap: 80px;
-            grid-template-columns: 1fr 1fr;
-        }
-
-        &__txt{
-            width: 100%;
-            font-family: $syne;
-            font-size: 30px;
-        }
-
-        &__button {
-            width: 100%;
-            text-align: end
-        }
-        
-        &__diagramme{
-            background: $light;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-            height: auto;
-            display: flex;
-            align-items: center;
-            z-index: 10;
-            transition: all 1s ease-in;
-
-            .button__prev {
-                position: absolute;
-                top: 20vh;
-                left: 100px;
-                background: $primary;
-                color: $light;
-            }
-
-            img {
-                padding: 2rem;
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        &__diagramme.closed {
-            right: -100%;
-            opacity: 0;
-        }
-
-        &__diagramme.opened {
-            right: 0;
-            opacity: 1;
-        }
-
-        .arrow_1{
-            display: inline-block;
-            width: 100%;
-            text-align: end;
-        }
-    }
-}
 @media screen and (max-width: 768px) {
     .proxi {
         padding: 2.5rem 1rem;

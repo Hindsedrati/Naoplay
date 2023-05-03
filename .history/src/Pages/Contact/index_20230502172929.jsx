@@ -1,7 +1,7 @@
 // Import des styles Sass
 import './Contact.scss';
 import { useState } from 'react';
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function Contact() {

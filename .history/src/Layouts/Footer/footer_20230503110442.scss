@@ -73,7 +73,6 @@
         }
 
         .footer {
-            height: auto;
             &__links {
                 &__top {
                     display: none;
@@ -85,7 +84,6 @@
                 width: fit-content;
                 padding: 1rem 2rem;
                 margin-bottom: 2.5rem;
-                margin-top: 2rem;
                 color: $dark;
                 background-color: $light;
                 font-family: $syne;
@@ -147,7 +145,7 @@
         &__soustitre {
             font-size: 36px;
             font-weight: 100;
-            line-height: 45px;
+            line-height: 36px;
         }
 
         &__title {
@@ -234,7 +232,7 @@
         p {
             font-size: 30px;
             font-weight: 100;
-            line-height: 45px;
+            line-height: 36px;
         }
 
         p:not([href]) {

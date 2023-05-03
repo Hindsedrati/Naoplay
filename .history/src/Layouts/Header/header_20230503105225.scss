@@ -188,7 +188,10 @@ ul li {
         transform: translateX(0%);
     }
 
-    
+    .ecart {
+        background-color: red;
+        margin-left: 4em;
+    }
 }
 /*grand écran*/
 @media screen and (min-width: 1901px) {
@@ -451,8 +454,5 @@ ul li {
     .btn {
         display: none;
     }
-    .ecart {
-        padding: 1rem;
-        margin-left: 2em;
-    }
+
 }

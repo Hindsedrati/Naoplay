@@ -1,7 +1,6 @@
 // Import des styles Sass
 import './Contact.scss';
 import { useState } from 'react';
-//import { Link } from "react-router-dom";
 
 
 function Contact() {
@@ -50,7 +49,7 @@ function Contact() {
               <input className='contact__message' type="message" id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Votre message"></input>
               <label htmlFor="message"></label>
 
-              <button href = "/*" className='contact__btn' type="submit">Envoyer</button>
+              <Link href = "/Error403"className='contact__btn' type="submit">Envoyer</Link>
             </div>
 
           </form>
@@ -93,7 +92,7 @@ function Contact() {
             </div>
           </div>
 
-          <button href= '/Error403' className='contact__btn' type="submit">Envoyer</button>
+          <button className='contact__btn' type="submit">Envoyer</button>
         </form>
 
       </div>
