@@ -1,0 +1,174 @@
+@import '../../Sass/variables.scss';
+
+.Gateway{
+    height: 100vh;
+    padding: 100px;
+    color: $dark;
+    
+    &__title {
+        font-family: 'MonumentExtended', sans-serif;
+    }
+
+    &__content::-webkit-scrollbar {
+        width: 0;
+    }
+    
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+    .Gateway{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+
+        &__content__child p{
+            line-height: 5rem;
+            font-family: $syne;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+
+    .partone{
+        display: block;
+        height: calc(100vh - 200px);
+        padding: 8rem 4rem 4rem;
+        text-align: right;
+        background: $dark;
+        color: $light;
+    }
+
+    .partone:hover{
+        background-color: $primary;
+        scroll-behavior: smooth;
+    }
+
+    .parttwo{
+        position: relative;
+        height: calc(100vh - 200px);
+
+        .Gateway__title {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            margin-left: 6rem;
+            font-size: 56px;
+            vertical-align: middle;
+        }
+
+        .G1, .G2, .G3, .G4, .G5 {
+            display: inline-block;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            border-bottom: 1rem solid $primary;
+            border-right: 2rem solid transparent;
+            line-height: 36px;
+        }
+
+        .G1{
+            margin-left: 15%;
+        }
+    
+        .G2{
+            margin-left: 50%;
+        }
+    
+        .G3{
+            margin-left: 80%;
+        }
+    
+        .G4{
+            margin-left: 50%;
+        }
+    
+        .G5{
+            margin-left: 15%;
+        }
+    } 
+}
+
+@media screen and (min-width: 1901px) {
+    .Gateway{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+
+        &__content__child p{
+            line-height: 9rem;
+            font-family: $syne;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .items{
+            margin-top: 6rem;
+        }
+    }
+
+    .partone{
+        display: block;
+        height: calc(100vh - 200px);
+        padding: 10rem 4rem 4rem;
+        text-align: right;
+        background: $dark;
+        color: $light;
+    }
+
+    .partone:hover{
+        background-color: $primary;
+        scroll-behavior: smooth;
+    }
+
+    .parttwo{
+        position: relative;
+        height: calc(100vh - 200px);
+
+        .Gateway__title {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            margin-left: 6rem;
+            font-size: 56px;
+            vertical-align: middle;
+        }
+
+        .G1, .G2, .G3, .G4, .G5 {
+            display: inline-block;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            border-bottom: 1rem solid $primary;
+            border-right: 2rem solid transparent;
+            line-height: 36px;
+        }
+
+        .G1{
+            margin-left: 15%;
+        }
+    
+        .G2{
+            margin-left: 50%;
+        }
+    
+        .G3{
+            margin-left: 80%;
+        }
+    
+        .G4{
+            margin-left: 50%;
+        }
+    
+        .G5{
+            margin-left: 15%;
+        }
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .Gateway{
+        display: none;
+    }
+}

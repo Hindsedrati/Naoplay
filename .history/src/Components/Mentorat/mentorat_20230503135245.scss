@@ -1,0 +1,204 @@
+@import '../../Sass/variables.scss';
+
+.mentorat {
+    min-height: 100vh;
+    color: $dark;
+
+    &__content::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+
+    .mentorat {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+
+        &__title__mobile {
+            display: none;
+        }
+
+        .first {
+            width: 40%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+
+            &__content__child {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: space-around;
+            }
+
+            &__content__child img {
+                display: block;
+                width: 200px;
+                margin: auto;
+                padding: 30px;
+            }
+        }
+
+        .second {
+            width: 60%;
+            height: 100vh;
+            padding: 100px;
+            color: $light;
+            background: $dark;
+
+            &__content__child {
+
+                h2 {
+                    font-family: $syne;
+                    font-size: 72px;
+                    font-weight: 700;
+                }
+
+                h3 {
+                    margin: 80px 0;
+                    font-family: $syne;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 1.6;
+                }
+
+                p {
+                    margin-top: 30px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    font-family: $syne;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1901px) {
+    .mentorat {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+
+        &__title__mobile {
+            display: none;
+        }
+
+        .first {
+            width: 40%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+
+            &__content__child {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: space-around;
+            }
+
+            &__content__child img {
+                display: block;
+                width: 300px;
+                margin: auto;
+                padding: 30px;
+            }
+        }
+
+        .second {
+            width: 60%;
+            height: 100vh;
+            padding: 100px;
+            color: $light;
+            background: $dark;
+
+            &__content__child {
+
+                h2 {
+                    font-family: $syne;
+                    font-size: 60px;
+                    font-weight: 700;
+                }
+
+                h3 {
+                    margin: 80px 0;
+                    font-family: $syne;
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 1.6;
+                }
+
+                p {
+                    margin-top: 45px;
+                    font-size: 30px;
+                    font-weight: 700;
+                    font-family: $syne;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+
+    .mentorat {
+        display: block;
+        padding: 2.5rem 1rem;
+
+        &__title__mobile {
+            font-family: 'MonumentExtended', sans-serif;
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 500;
+        }
+
+        .first {
+            width: 100%;
+
+            &__content__child {
+                width: 100%;
+                margin-top: 50px;
+                display: inline-flex;
+                justify-content: space-around;
+            }
+
+            &__content__child img {
+                display: block;
+                width: 70px;
+                margin: auto;
+            }
+        }
+
+        .second {
+            color: $dark;
+            background: $light;
+
+            &__content__child {
+
+                h2 {
+                    display: none;
+                }
+
+                h3 {
+                    margin: 50px 0;
+                    font-family: $syne;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 1.6;
+                }
+
+                p {
+                    margin-top: 24px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    font-family: $syne;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}

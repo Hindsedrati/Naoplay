@@ -1,0 +1,186 @@
+@import '../../Sass/variables.scss';
+
+.partners {
+  min-height: 210px;
+  background: $dark;
+  color: $light;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content h3 {
+    font-family: 'MonumentExtended', sans-serif;
+    color: $light;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+
+  .partners {
+    padding-left: 80px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    &__content h3 {
+      padding-right: 15px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 32px;
+    }
+
+    &__image {
+      position: relative;
+      width: auto;
+      height: 70px;
+      margin-top: 70px;
+      overflow: hidden;
+    }
+
+    &__icons {
+      position: absolute;
+      display: flex;
+      width: 150%;
+      height: 70px;
+      top: 0;
+      left: 30px;
+      color: #fff;
+
+      animation-name: IconeMove;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+
+      @keyframes IconeMove {
+        from {
+          transform: translateX(-25%);
+        }
+
+        to {
+          transform: translateX(0);
+        }
+      }
+    }
+
+    &__icons img {
+      height: 100%;
+      width: auto;
+      margin-right: 70px;
+      
+    }
+  }
+}
+
+@media screen and (min-width: 1901px) {
+
+  .partners {
+    padding-left: 80px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    &__content h3 {
+      padding-right: 15px;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 32px;
+    }
+
+    &__image {
+      position: relative;
+      width: auto;
+      height: 70px;
+      margin-top: 70px;
+      overflow: hidden;
+    }
+
+    &__icons {
+      position: absolute;
+      display: flex;
+      width: 150%;
+      height: 70px;
+      top: 0;
+      left: 30px;
+      color: #fff;
+
+      animation-name: IconeMove;
+      animation-duration: 9s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+
+      @keyframes IconeMove {
+        from {
+          transform: translateX(-25%);
+        }
+
+        to {
+          transform: translateX(0);
+        }
+      }
+    }
+
+    &__icons img {
+      height: 100%;
+      width: auto;
+      margin-right: 70px;
+      
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .partners {
+    padding: 1rem;
+
+    &__content h3 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 32px;
+    }
+
+    &__image {
+      position: relative;
+      width: auto;
+      height: 70px;
+      margin-top: 50px;
+      overflow: hidden;
+    }
+
+    &__icons {
+      position: absolute;
+      display: flex;
+      width: 150%;
+      height: 60px;
+      top: 0;
+      left: 30px;
+      color: #fff;
+
+      animation-name: IconeMove;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+
+      @keyframes IconeMove {
+        from {
+          transform: translateX(-25%);
+        }
+
+        to {
+          transform: translateX(0);
+        }
+      }
+    }
+
+    &__icons img {
+      height: 100%;
+      width: auto;
+      margin-right: 70px;
+      
+    }
+  }
+}
+
