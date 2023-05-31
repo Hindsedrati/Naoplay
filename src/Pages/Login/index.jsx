@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import './login.scss';
 //import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 function Login () {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -19,6 +21,8 @@ function Login () {
     event.preventDefault();
     console.log(`Email: ${email} Password: ${password}`);
     // Envoie des données du formulaire vers le serveur
+
+    navigate('/erreur');
   };
 
   return (
@@ -33,7 +37,8 @@ function Login () {
         <label for="password">password:</label>
         <input className='input' placeholder="**********"  type="password" name="password" value={password} onChange={handlePasswordChange} />
       </label>
-      <button to='/*'  type="submit">CONNEXION</button>
+      <button type="submit">CONNEXION</button>
+
     </form>
     </div>
   );

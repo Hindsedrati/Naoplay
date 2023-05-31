@@ -20,7 +20,7 @@ function Proxisation() {
 
   return (
     <section id="proxi" className='proxi'>
-      <h2 className='proxi__title'>L'URBANISATION<br /> PAR LA "PROXISATION"</h2>
+      <h2 className='proxi__title'>L'urbanisation<br /> par la "proxisation"</h2>
 
       <div className='proxi__content'>
         <p className='proxi__txt'>Dans l'urbanisation du Système d'Information, les API jouent un rôle clef puisqu'elles permettent de générer la couche d'abstraction entre les différents domaines métiers</p>

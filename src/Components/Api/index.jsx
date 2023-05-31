@@ -26,7 +26,7 @@ function Api() {
       <div className='api__content'>
         <div id='row__content' className='row__content show__first'>
           <div className='row__1'>
-            <h2 className='api__title'>LES API ?</h2>
+            <h2 className='api__title'>Les APIs ?</h2>
             <article className='first__child'>
               <p>
                 Les APIs (pour "Application Programming Interface")ont été introduites il y a plusieurs décennies pour permettre aux développeurs

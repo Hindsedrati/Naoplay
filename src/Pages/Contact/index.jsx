@@ -2,8 +2,13 @@ import {useRef} from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from '@emailjs/browser';
 import './Contact.scss'
+import { useNavigate } from 'react-router-dom';
+
+
 
 function Contact () {
+  const navigate = useNavigate();
+
     const onChange = () => {}
     const form = useRef();
 
@@ -13,7 +18,8 @@ function Contact () {
       emailjs.sendForm('service_44u8cjr', 'template_inhqe9s', form.current, '8NxIleLNHSlKohwIe')
         .then((result) => {
             console.log(result.text);
-            alert("Votre message a été envoyé avec succès !");
+            window.scrollTo(0, 0);
+            navigate('/');
         }, (error) => {
             console.log(error.text);
         }

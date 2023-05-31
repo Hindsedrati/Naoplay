@@ -19,21 +19,21 @@ function api__management() {
       <div className='api__management__left'>
 
         <a className='api__management__link' href='/'>
-          <span>MONÉTISATION</span>
+          <span>Monétisation</span>
           <div className='api__management__logo'>
             <img src={panier} alt='panier' />
           </div>
         </a>
 
         <a className='api__management__link' href='/'>
-          <span>SUIVI DES UTILISATEURS-CONSOMMATEURS API</span>
+          <span>Suivi des utilisateurs-consommateurs APIs</span>
           <div className='api__management__logo'>
             <img src={user} alt='user' />
           </div>
         </a>
 
         <a className='api__management__link' href='/'>
-          <span>AUTHENTIFICATIONS</span>
+          <span>Authentifications</span>
           <div className='api__management__logo'>
             <img src={cadena} alt='cadena' />
           </div>
@@ -42,7 +42,7 @@ function api__management() {
       </div>
 
       <div className='api__management__center'>
-        <h2 className='api__management__title'> API <br /> MANAGEMENT</h2>
+        <h2 className='api__management__title'> API <br /> Management</h2>
         <div className='cercle'></div>
         <div className='cercle1'></div>
         <div className='cercle2'></div>
@@ -55,21 +55,21 @@ function api__management() {
           <div className='api__management__logo'>
             <img src={cloud} alt='PLATEFORMES CLOUD' />
           </div>
-          <span>SERVICES & PLATEFORMES CLOUD</span>
+          <span>Services & plateformes CLOUD</span>
         </a>
 
         <a className='api__management__link' href='/'>
           <div className='api__management__logo'>
             <img src={bdd} alt='cloud' />
           </div>
-          <span>INFRASTRUCTURES CLOUD</span>
+          <span>Infrastructure CLOUD</span>
         </a>
 
         <a className='api__management__link' href='/'>
           <div className='api__management__logo'>
             <img src={maison} alt='application' />
           </div>
-          <span>INFRASTRUCTURES APPLICATIONS ON-PREMISE</span>
+          <span> Infrastructures Applications on-premise </span>
         </a>
 
       </div>

@@ -1,15 +1,16 @@
 import './footer.scss';
 import { RiLinkedinFill } from "react-icons/ri";
 import { FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <footer>
       <div className="footer-content">
         <div className="footer-section links">
-          <a href="/">Home</a>
-          <a href="./Login">Login</a>
-          <a href="./Contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/Login">Login</Link>
+          <Link to="/Contact">Contact</Link>
         </div>
 
         <div className="footer__icons">

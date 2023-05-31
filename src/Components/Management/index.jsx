@@ -10,7 +10,7 @@ function Management() {
     <section id="management" className='management'>
 
       <h1 className='management__title'>
-        API<br /> MANAGEMENT
+        API<br /> Management
       </h1>
 
       <div className='management__content'>
