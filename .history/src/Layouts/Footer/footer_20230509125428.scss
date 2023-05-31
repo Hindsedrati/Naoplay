@@ -1,0 +1,91 @@
+@import '../../Sass/variables.scss';
+
+footer {
+  background: $dark;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  display: flex;
+}
+
+.links a,
+.social a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 25px;
+}
+
+
+.footer__icons{
+    margin-top: 1rem;
+        display: flex;
+        gap: 2rem;
+
+        a {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            text-decoration: none;
+            color: $dark;
+            background-color: $light;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+            background-color: $dark;
+            color: $light;
+        }
+}
+.footer-bottom {
+  display: grid;
+  justify-content: flex-end;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 20px;
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+}
+
+.footer-legal {
+  /*display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 20px;
+  
+  padding-top: 10px;*/
+  display: grid;
+  justify-content: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding-top: 10px;
+
+}
+
+.footer-legal a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.footer-legal a:hover {
+  text-decoration: underline;
+}

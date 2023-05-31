@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;400;500;600;700&display=swap");
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("fonts/MonumentExtended-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("../../Sass/fonts/MonumentExtended-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.error {
+  background: #000F14;
+}
+.error h1 {
+  font-family: "MonumentExtended", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+.error p {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 6rem;
+  }
+  .error__btn {
+    margin-left: 2rem;
+    margin-top: 4rem;
+    text-decoration: none;
+    color: #000F14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+    width: 200px;
+    height: 55px;
+    background: white;
+    transition: transform 0.3s ease-out;
+  }
+  .error h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .error p {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0rem;
+  }
+  .error img {
+    height: 346px;
+    width: 246px;
+    justify-content: center;
+  }
+  .error .pc {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .error {
+    height: 91vh;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    text-align: center;
+  }
+  .error__btn {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: #000F14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+    width: 200px;
+    height: 55px;
+    background: white;
+    transition: transform 0.3s ease-out;
+  }
+  .error__btn:hover {
+    transform: scale(1.1);
+    background-color: #00A8EB;
+    color: white;
+  }
+  .officiel {
+    width: 500px;
+    transform: scaleX(-1);
+    transition: transform 0.3s ease-out;
+  }
+  h1 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .texte {
+    margin-bottom: 4rem;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .pc {
+    display: none;
+  }
+  .partiedroite {
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: flex-end;
+  }
+  .partiegauche {
+    display: flex;
+    justify-content: center;
+    background: white;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1901px) {
+  .error {
+    height: 91vh;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    text-align: center;
+  }
+  .error__btn {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: #000F14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+    width: 200px;
+    height: 55px;
+    background: white;
+    transition: transform 0.3s ease-out;
+  }
+  .error__btn:hover {
+    transform: scale(1.1);
+    background-color: #00A8EB;
+    color: white;
+  }
+  .officiel {
+    width: 500px;
+    transform: scaleX(-1);
+    transition: transform 0.3s ease-out;
+  }
+  h1 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .texte {
+    margin-bottom: 4rem;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .pc {
+    display: none;
+  }
+  .partiedroite {
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: flex-end;
+  }
+  .partiegauche {
+    display: flex;
+    justify-content: center;
+    background: white;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+  }
+}/*# sourceMappingURL=Error.css.map */

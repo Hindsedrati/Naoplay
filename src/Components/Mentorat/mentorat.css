@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;400;500;600;700&display=swap");
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("fonts/MonumentExtended-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.mentorat {
+  min-height: 100vh;
+  color: #000F14;
+}
+.mentorat__content::-webkit-scrollbar {
+  width: 0;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .mentorat {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .mentorat__title__mobile {
+    display: none;
+  }
+  .mentorat .first {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .mentorat .first__content__child {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+  }
+  .mentorat .first__content__child img {
+    display: block;
+    width: 200px;
+    margin: auto;
+    padding: 30px;
+  }
+  .mentorat .second {
+    width: 60%;
+    height: 100vh;
+    padding: 100px;
+    color: white;
+    background: #000F14;
+  }
+  .mentorat .second__content__child h2 {
+    font-family: "Syne", sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+  }
+  .mentorat .second__content__child h3 {
+    margin: 80px 0;
+    font-family: "Syne", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+  .mentorat .second__content__child p {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Syne", sans-serif;
+    line-height: 1.6;
+  }
+}
+@media screen and (min-width: 1901px) {
+  .mentorat {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .mentorat__title__mobile {
+    display: none;
+  }
+  .mentorat .first {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .mentorat .first__content__child {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+  }
+  .mentorat .first__content__child img {
+    display: block;
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+  }
+  .mentorat .second {
+    width: 60%;
+    height: 100vh;
+    padding: 100px;
+    color: white;
+    background: #000F14;
+  }
+  .mentorat .second__content__child h2 {
+    font-family: "Syne", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .mentorat .second__content__child h3 {
+    margin: 80px 0;
+    font-family: "Syne", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+  .mentorat .second__content__child p {
+    margin-top: 45px;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Syne", sans-serif;
+    line-height: 1.6;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mentorat {
+    display: block;
+    padding: 2.5rem 1rem;
+  }
+  .mentorat__title__mobile {
+    font-family: "MonumentExtended", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+  .mentorat .first {
+    width: 100%;
+  }
+  .mentorat .first__content__child {
+    width: 100%;
+    margin-top: 50px;
+    display: inline-flex;
+    justify-content: space-around;
+  }
+  .mentorat .first__content__child img {
+    display: block;
+    width: 70px;
+    margin: auto;
+  }
+  .mentorat .second {
+    color: #000F14;
+    background: white;
+  }
+  .mentorat .second__content__child h2 {
+    display: none;
+  }
+  .mentorat .second__content__child h3 {
+    margin: 50px 0;
+    font-family: "Syne", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+  .mentorat .second__content__child p {
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Syne", sans-serif;
+    line-height: 1.6;
+  }
+}/*# sourceMappingURL=mentorat.css.map */

@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;400;500;600;700&display=swap");
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("fonts/MonumentExtended-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.management {
+  background: #00A8EB;
+  color: white;
+}
+.management__title {
+  font-family: "MonumentExtended", sans-serif;
+}
+.management__content::-webkit-scrollbar {
+  width: 0;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .management {
+    min-height: 100vh;
+  }
+  .management__title {
+    display: none;
+  }
+  .management__content {
+    width: 100%;
+    min-height: 250px;
+    padding: 30px 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 100px;
+    font-family: "Syne", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    position: relative;
+  }
+  .management__content .arrow_1 {
+    display: none;
+  }
+  .management__content .arrow_2 {
+    display: none;
+  }
+  .management__content p {
+    margin-top: 0.8rem;
+    font-family: "DM Sans", sans-serif;
+  }
+}
+@media screen and (min-width: 1901px) {
+  .management {
+    min-height: 100vh;
+  }
+  .management__title {
+    display: none;
+  }
+  .management__content {
+    width: 100%;
+    min-height: 250px;
+    padding: 30px 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 100px;
+    font-family: "Syne", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    position: relative;
+  }
+  .management__content .arrow_1 {
+    display: none;
+  }
+  .management__content .arrow_2 {
+    display: none;
+  }
+  .management__content p {
+    font-size: 25px;
+    margin-top: 0.8rem;
+    font-family: "DM Sans", sans-serif;
+  }
+}
+@media screen and (max-width: 768px) {
+  .management {
+    padding: 2.5rem 1rem;
+  }
+  .management__content {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    font-family: "Syne", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    overflow: scroll;
+    position: relative;
+  }
+  .management__content__child {
+    min-width: 100%;
+  }
+  .management__content .arrow_1 {
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+    font-size: 30px;
+    color: #00A8EB;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .management__content .arrow_2 {
+    position: absolute;
+    bottom: 2px;
+    right: -23rem;
+    font-size: 2rem;
+    background: white;
+    color: #00A8EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .management__title {
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 100;
+  }
+  .management__content {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .management p {
+    margin-top: 30px;
+    padding: 0rem 1rem;
+  }
+}/*# sourceMappingURL=management.css.map */

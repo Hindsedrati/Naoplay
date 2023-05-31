@@ -1,0 +1,166 @@
+@import '../../Sass/variables.scss';
+
+/* Grand écran */
+@media screen and (min-width: 1901px) {
+  .contact-form {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  h2 {
+    font-size: 35px;
+  }
+  
+  p {
+    font-size: 24px;
+  }
+  
+  .card {
+    max-width: 300px;
+  }
+  
+  .contact-input {
+    width: 300px;
+  }
+  
+  .btn[type="submit"] {
+    background-color: $primary;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn [type="submit"]:hover {
+    background-color: $primary;
+  }
+}
+
+/* Écran moyen */
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .container {
+    padding: 40px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  .card {
+    max-width: 350px;
+  }
+  
+  .contact-input {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* Petit écran */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  .card {
+    max-width: 100%;
+  }
+  
+  .contact-input {
+    width: 100%;
+  }
+  
+  .btn[type="submit"] {
+    padding: 10px 20px;
+  }
+}
+
+.contact-form {
+  background-image: url('../../assets/vision_naoplay.webp');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 720px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-family: $syne;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: $Dm;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+}
+ 
+.contact-input{
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  font-family: $syne;
+  font-weight: 700;
+  font-size: 18px;
+  color: $primary;
+}
+::placeholder {
+  font-size: 22px;
+  font-family: $syne;
+  font-weight: 100;
+  
+} 
+:focus {
+  outline: none;
+  border: none;
+}

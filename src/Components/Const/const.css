@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;400;500;600;700&display=swap");
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("fonts/MonumentExtended-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.home {
+  color: white;
+  background-image: url("../../assets/vision_naoplay.webp");
+  background-size: cover;
+  background-position: center;
+}
+.home h1 {
+  font-weight: bold;
+  font-family: "MonumentExtended", sans-serif;
+}
+.home h2 {
+  font-family: "Syne", sans-serif;
+}
+.home__btn {
+  text-decoration: none;
+  color: #000F14;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  font-family: "Syne", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+.home__btn:hover {
+  background-color: #000F14;
+  color: white;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .home {
+    margin-top: 2rem;
+  }
+  .home h1 {
+    font-size: 70px;
+    font-weight: 500;
+  }
+  .home h2 {
+    margin-top: 80px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .home__btn {
+    margin-top: 150px;
+  }
+}
+/* Code ajouté pour centrer en version mobile */
+@media screen and (max-width: 768px) {
+  .home {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .home h1 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 200;
+  }
+  .home h2 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.6;
+  }
+  .home__btn {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1901px) {
+  .home {
+    height: 100vh;
+  }
+  .home h1 {
+    line-height: 5rem;
+    font-size: 70px;
+    font-weight: 500;
+  }
+  .home h2 {
+    margin-top: 80px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .home__btn {
+    margin-top: 80px;
+  }
+}/*# sourceMappingURL=const.css.map */

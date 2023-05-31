@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;400;500;600;700&display=swap");
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("fonts/MonumentExtended-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("../../Sass/fonts/MonumentExtended-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.error1 {
+  background: #00A8EB;
+}
+.error1 h1 {
+  font-family: "MonumentExtended", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+.error1 p {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .error1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  .error1__bouton {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: #000F14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+    width: 200px;
+    height: 55px;
+    background: white;
+    transition: transform 0.3s ease-out;
+  }
+  .error1 h1 {
+    font-size: 30px;
+    margin-left: 1rem;
+    text-align: left;
+  }
+  .error1 p {
+    text-align: left;
+    margin-left: 1rem;
+    font-size: 25px;
+  }
+  .error1 img {
+    height: 594px;
+    width: 396px;
+    justify-content: center;
+    margin-top: -6rem;
+    margin-bottom: -4rem;
+  }
+  .error1 .desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .error1 {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    height: 100vh;
+  }
+  .error1 .firstpart {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+  }
+  .error1 h1 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .error1 p {
+    margin-bottom: 4em;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .error1 img {
+    width: 600px;
+    transform: scaleX(-1);
+    transition: transform 0.3s ease-out;
+  }
+  .error1 .secondpart {
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: flex-end;
+  }
+  .error1__bouton {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: #000F14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+    width: 200px;
+    height: 55px;
+    background: white;
+    transition: transform 0.3s ease-out;
+  }
+  .error1__bouton:hover {
+    transform: scale(1.1);
+    background-color: #000F14;
+    color: white;
+  }
+  .mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 1901px) {
+  .error1 {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    height: 100vh;
+  }
+  .error1 .firstpart {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+  }
+  .error1 h1 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .error1 p {
+    margin-bottom: 4em;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .error1 img {
+    width: 600px;
+    transform: scaleX(-1);
+    transition: transform 0.3s ease-out;
+  }
+  .error1 .secondpart {
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: flex-end;
+  }
+  .error1__bouton {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: #000F14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+    width: 200px;
+    height: 55px;
+    background: white;
+    transition: transform 0.3s ease-out;
+  }
+  .error1__bouton:hover {
+    transform: scale(1.1);
+    background-color: #000F14;
+    color: white;
+  }
+  .mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=Error403.css.map */

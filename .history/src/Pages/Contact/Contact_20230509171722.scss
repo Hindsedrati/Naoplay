@@ -1,0 +1,200 @@
+@import '../../Sass/variables.scss';
+
+@font-face {
+  font-family: 'MonumentExtended';
+  src: url('../../Sass/fonts/MonumentExtended-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.contact {
+  background: $dark;
+  color: $light;
+  
+
+  & p {
+    font-family: $syne;
+    font-weight: bold;
+    line-height: 35px;
+    font-size: 25px;
+  }
+
+  &__btn {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: $syne;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: $light;
+    color: $dark;
+    width: 240px;
+    height: 55px;
+    
+    align-self: flex-start;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $primary;
+      color: $light;
+    }
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: .6rem 0;
+    font-size: 24px;
+    outline: none;
+    border: none; 
+    background-color: transparent;
+    border-bottom: 5px solid $light;
+    color: $light;
+    
+    &::placeholder {
+      font-family: $syne;
+      font-size: 24px;
+      color: $light;
+      line-height: 2;
+      text-align: end;
+      border: none;
+    }
+
+    &
+    :focus {
+      outline: none;
+      border: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    
+    padding: 2rem;
+    text-align: center;
+    p{
+      line-height: 36px;
+      margin-top: 5rem;
+    }
+    &__content {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 2;
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 2rem;
+      font-family: $Dm;
+      overflow: scroll;
+
+      &__child {
+        box-sizing: border-box;
+        min-width: 100%;
+      }
+
+      .contact__mobile__box {
+        margin-top: 6rem;
+        text-align: center;
+
+        input {
+          width: 100%;
+          padding: 0.5rem;
+          margin-bottom: 1rem;
+        }
+
+        label {
+          width: 100%;
+          margin-bottom: 1rem;
+          border-bottom: 5px solid $light;
+        }
+      }
+    }
+
+    &__content::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+
+  .contact__desktop__form {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+  .contact {
+    height: calc(100vh - 80px);
+    padding: 50px 80px;
+    box-sizing: border-box;
+    margin-top: 5rem;
+    &__mobile {
+      display: none;
+    }
+  }
+  .contact__desktop {
+    display: flex;
+    margin: 70px 0;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .contact_desktop_box {
+    width: 75%;
+
+    .name__message {
+      display: block;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
+    }
+
+    p {
+      font-family: $syne;
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1901px) {
+  .contact {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    padding: 7rem 7rem;
+    box-sizing: border-box;
+    margin-top: 5rem;
+    &__mobile {
+      display: none;
+    }
+  }
+  .contact__desktop {
+    display: flex;
+    margin: 70px 0;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .contact_desktop_box {
+    width: 75%;
+
+    
+
+    
+
+    p {
+      font-family: $syne;
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}
