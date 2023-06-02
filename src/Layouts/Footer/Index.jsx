@@ -1,6 +1,7 @@
 import './footer.scss';
 import { RiLinkedinFill } from "react-icons/ri";
-import { FaEnvelope } from "react-icons/fa";
+//import { FaEnvelope } from "react-icons/fa";
+import { FaFacebookF} from "react-icons/fa"
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -17,8 +18,8 @@ function Footer() {
           <a c href="https://www.linkedin.com/company/naoplay/" target="_blank" rel="noreferrer">
             <RiLinkedinFill />
           </a>
-          <a  href="mailto:contact@naoplay.fr/" target="_blank" rel="noreferrer">
-            <FaEnvelope />
+          <a  href="https://www.facebook.com/Naoplay" target="_blank" rel="noreferrer">
+            <FaFacebookF/>
           </a>
         </div>
       </div>

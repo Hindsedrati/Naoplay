@@ -16,7 +16,7 @@ footer {
   }
   
   .footer-section {
-  font-family: $Dm;
+  font-family: $Jakarta;
   display: flex;
   }
   
@@ -49,11 +49,12 @@ footer {
   }
   
   .footer-bottom {
-    font-family: $Dm;
+    font-family: $Jakarta;
     display: grid;
     justify-content: flex-end;
     border-top: 0.15vw solid #fff;
-    //padding-top: 1vw;
+    
+    padding-top: 1rem;
     //font-size: 20px; /* taille de police en vw */
     padding-top: 1.5vw; /* taille de marge en vw */
     
@@ -63,16 +64,16 @@ footer {
   display: grid;
   justify-content: flex-start;
   max-width: 1000px;
-  //font-size: 2.5vw;
   }
   
   .footer-legal a {
-  font-family: $syne;
+  font-family: $Jakarta;
   color: #fff;
   text-decoration: none;
 
   }
   
+
   
 
   @media screen and (max-width: 768px) {
@@ -151,11 +152,12 @@ footer {
       margin: 0 auto;
       font-size: 25px;
       padding-right: 6rem;
+      
     }
     
     .footer-legal {
       font-size: 25px;
-      margin: -4vw auto 0;
+      margin: -3vw auto 0;
       
     }
     
@@ -198,6 +200,7 @@ footer {
       margin: 2rem 2rem 2rem 13rem;
       font-size: 25px;
       padding-right: 10rem;
+      
     }
     
    .footer-legal {
@@ -206,6 +209,7 @@ footer {
         margin-top: -5vw;
         margin-right: auto;
         margin-bottom: 0;
+        
         
       }
   

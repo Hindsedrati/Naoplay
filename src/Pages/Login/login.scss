@@ -54,6 +54,7 @@
           transition: background-color 0.3s ease;
           cursor: pointer;
           transition: all 0.2s ease-in-out;
+          
           //width: 100%;
           font-family: $syne;
       
@@ -100,6 +101,7 @@
       }
   
       button {
+        margin-top: rem;
         padding: 4vw 8vw;
         font-size: 5vw;
       }
@@ -114,7 +116,7 @@
       }
       
       .login {
-        padding: 2.5vw;
+        padding: 10rem;
         width: 70vw;
       
         .label {
@@ -133,6 +135,7 @@
         }
       
         button {
+          margin-top: 2rem;
           padding: 1.5vw 3vw;
           font-size: 2.5vw;
         }
@@ -148,7 +151,7 @@
     .login {
       padding: 4vw;
       border-radius: 1vw;
-      width: 80vw;
+      width: 60vw;
       
       .label {
         label {
@@ -164,10 +167,10 @@
       }
       
       button {
-        padding: 2vw 4vw;
+        padding: 2rem;
         border-radius: 1vw;
         font-size: 3vw;
-        margin-top: 2rem;
+        margin-top: 4rem;
       }
       button:hover{
         color: $dark;

@@ -53,7 +53,7 @@
 
         &__txt{
             width: 100%;
-            font-family: $syne;
+            font-family: $Jakarta;
             font-size: 30px;
         }
 
@@ -111,7 +111,7 @@
 @media screen and (min-width: 1901px) {
 
     .proxi{
-        min-height: 100vh;
+        min-height: 90vh;
         position: relative;
         padding: 100px;
         display: flex;
@@ -123,7 +123,7 @@
         &__title{
             text-align: start;
             font-family: 'MonumentExtended', sans-serif;
-            font-size: 70px;
+            font-size: 65px;
         }
 
         &__content {
@@ -135,8 +135,8 @@
 
         &__txt{
             width: 100%;
-            font-family: $syne;
-            font-size: 40px;
+            font-family: $Jakarta;
+            font-size: 30px;
         }
 
         &__button {
@@ -196,13 +196,13 @@
             padding-top: 30px;
             font-family: 'MonumentExtended', sans-serif;
             font-size: 30px;
-            font-weight: Medium;
+            font-weight: 500;
             line-height: 35px;
         }
 
         &__txt {
             padding-top: 30px;
-            font-family: $syne;
+            font-family: $Jakarta;
             font-size: 24px;
             line-height: 30px;
             font-weight: 700;

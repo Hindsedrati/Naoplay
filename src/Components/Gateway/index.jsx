@@ -3,7 +3,7 @@ import './gateway.scss'
 
 function Gateway() {
     return (
-        <section className='Gateway'>
+        <section id="gateway" className='Gateway'>
 
             <div className='partone Gateway__content'>
                 <div className='Gateway__content__child'>

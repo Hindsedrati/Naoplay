@@ -71,7 +71,7 @@ const Header = () => {
                                     </a>
                                 </li>
                                 <li >
-                                    <a href='#api' className="ecart nav__item" aria-expanded={attribut} onClick={() => ariaExpanded(`${attribut}`)}>
+                                    <a href='#gateway' className="ecart nav__item" aria-expanded={attribut} onClick={() => ariaExpanded(`${attribut}`)}>
                                         API Gateway
                                     </a>
                                 </li>

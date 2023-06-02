@@ -11,7 +11,7 @@ function Mentorat() {
         <section id='mentorat' className='mentorat'>
 
             <div className='first'>
-                <h2 className='mentorat__title__mobile'>Le Montorat NAOPLAY</h2>
+                <h2 className='mentorat__title__mobile'>Le mentorat Naoplay</h2>
 
                 <div className='first__content__child'>
                     <img src={blanc} alt='blanc' />
@@ -23,7 +23,7 @@ function Mentorat() {
 
             <article className='second'>
                 <div className='second__content__child'>
-                    <h2>Le Montorat NAOPLAY</h2>
+                    <h2>Le mentorat Naoplay</h2>
                     <h3>Le mentorat Naoplay poursuit différents objectifs:</h3>
                     <p>- que nos consultant•e•s soient exposé•e•s à l'ensemble de l'écosystème API et pas uniquement « super experts » de la solution utilisée chez leur client </p>
                     <p>- que nos consultant•e•s soient accompagné•e•s dans leurs missions</p>

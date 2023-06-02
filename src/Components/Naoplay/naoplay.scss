@@ -15,30 +15,12 @@
     font-family: 'MonumentExtended', sans-serif;
   }
 
-  &__btn {
-    background-color: $primary;
-    color: $light;
-    display: inline-block;
-    font-family: Syne,sans-serif;
-    font-weight: 700;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-
-    &:hover {
-      background-color: $dark;
-      color: $light;
-    }
-  }
-
   &__soustitres {
-    font-family: $Dm;
+    font-family: $Jakarta;
   }
 
   &__txt {
-    font-family: $Dm;
+    font-family: $Jakarta;
   }
 
   &__content::-webkit-scrollbar {
@@ -64,6 +46,7 @@
     }
 
     &__txt {
+      padding: 4rem;
       font-weight: 500;
       font-size: 22px;
     }
@@ -299,7 +282,7 @@
     }
 
     &__soustitres {
-      font-weight: 700;
+      font-weight: 500;
       font-size: 22px;
     }
 

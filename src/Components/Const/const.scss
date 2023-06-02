@@ -8,12 +8,12 @@
   background-position: center;
 
   h1 {
-    font-weight: bold;
+    
     font-family: 'MonumentExtended', sans-serif;
   }
 
   h2 {
-    font-family: $syne;
+    font-family: $Jakarta;
   }
 
   &__btn {
@@ -40,16 +40,17 @@
     
     h1 {
       font-size: 70px;
-      font-weight: 500;
+      font-weight: 700;
     }
 
     h2 {
+      padding: 0rem 10rem 2rem 1rem;
       margin-top: 80px;
-      font-size: 32px;
-      font-weight: 700;
+      font-size: 28px;
+      font-weight: 500;
       line-height: 40px;
+      
     }
-
     &__btn {
       margin-top:150px;
     }
@@ -93,13 +94,14 @@
     h1 {
       line-height: 5rem;
       font-size: 70px;
-      font-weight: 500;
+      font-weight: 700;
     }
 
     h2 {
+      padding: 0rem 26rem 2rem 1rem;
       margin-top: 80px;
-      font-size: 32px;
-      font-weight: 700;
+      font-size: 28px;
+      font-weight: 500;
       line-height: 40px;
     }
 
