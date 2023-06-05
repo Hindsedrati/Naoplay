@@ -72,6 +72,10 @@
         display: grid;
         grid-template-columns: 1fr 1.2fr;
         text-align: center;
+        &__title{
+            font-size: 70px;
+            line-height: 80px;
+        }
         &__btn {
             margin-left: 2rem;
             margin-bottom: 2rem;
@@ -99,10 +103,7 @@
         transform: scaleX(-1);
         transition: transform 0.3s ease-out;
     }  
-    h1{
-        font-size: 70px;
-        line-height: 80px;
-    }
+    
     .texte{
         margin-bottom: 4rem;
         font-size: 30px;

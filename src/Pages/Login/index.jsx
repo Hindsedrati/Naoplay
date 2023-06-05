@@ -28,18 +28,17 @@ function Login () {
   return (
     <div className='main'>
       <form className='login' onSubmit={handleSubmit}>
-        <h1>login</h1>
-      <label className='label'>
-        <label for="mail">mail:</label>
-        <input className='input' placeholder="Pnom@naoplay.fr" type="email" name="email" value={email} onChange={handleEmailChange} />
-      </label>
-      <label className='label'>
-        <label for="password">password:</label>
-        <input className='input' placeholder="**********"  type="password" name="password" value={password} onChange={handlePasswordChange} />
-      </label>
-      <button type="submit">CONNEXION</button>
-
-    </form>
+        <h1 className='login__title'>
+          login
+        </h1>
+        <label className='label'>
+          <input className='input' placeholder="Pnom@naoplay.fr" type="email" name="email" value={email} onChange={handleEmailChange} />
+        </label>
+        <label className='label'>
+          <input className='input' placeholder="**********"  type="password" name="password" value={password} onChange={handlePasswordChange} />
+        </label>
+        <button type="submit">CONNEXION</button>
+      </form>
     </div>
   );
 };

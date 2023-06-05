@@ -15,12 +15,13 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <React.StrictMode>
     <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/*" element={<Error404 />} />
         <Route path="/Error" element={<Error403 />} />

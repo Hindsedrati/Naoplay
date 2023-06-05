@@ -10,7 +10,7 @@ function Error404() {
       </div>
       <div className="partiedroite">
         <img className='pc' src={ thinking } alt="" />
-        <h1>OUPS, 404</h1>
+        <h1 className='error__title'>OUPS, 404</h1>
         <p className='texte'>Vous n’êtes pas autorisé à consulter cette page. Cette page n’est pas disponible.</p>
         <Link to="/" className="error__btn">RETOUR</Link>
       </div>

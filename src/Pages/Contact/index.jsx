@@ -39,7 +39,7 @@ function Contact () {
           <input className = "contact-input" type="text" placeholder="Société" name="societe" required />
           <input className = "contact-input" type="text" placeholder="Sujet" name="subject" required />
           <textarea className = "contact-input" placeholder="Message" name="message" cols="30" rows="10"></textarea>
-          
+            
           <ReCAPTCHA sitekey="6Lfz4VAmAAAAADzSJ0sCJ8PH8_J1VmZQC-jHstkF" onChange={onChange} />
           <button type="submit" class="bouton bouton-primary">Envoyer</button>
         </form>

@@ -25,12 +25,10 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <small>&copy; 2023 All Rights Reserved.</small>
-        <small>Design & Coded BY Naoplay </small>
+        <small className='footer-rights'>&copy; Naoplay, 2023 all rights reserved</small>
       </div>
 
       <div className="footer-legal">
-        <a href='/'>Politique de confidentialité</a>
         <a href='/'>Mentions légales</a>
       </div>
     </footer>

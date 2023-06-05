@@ -1,7 +1,6 @@
 @import '../../Sass/variables.scss';
 
 footer {
-  height: auto;
   color: $light;
   position: relative;
   background: $dark;
@@ -22,13 +21,13 @@ footer {
   
   .links a,
   .social a {
-  color: #fff;
+  color: $light;
   text-decoration: none;
   }
   
   .footer__icons {
   display: flex;
-  gap: 2vw;
+  
   }
   
   .footer__icons a {
@@ -52,34 +51,26 @@ footer {
     font-family: $Jakarta;
     display: grid;
     justify-content: flex-end;
-    border-top: 0.15vw solid #fff;
-    
-    padding-top: 1rem;
-    //font-size: 20px; /* taille de police en vw */
-    padding-top: 1.5vw; /* taille de marge en vw */
-    
+    border-top: 1px solid $light;
   }
 
   .footer-legal {
-  display: grid;
-  justify-content: flex-start;
-  max-width: 1000px;
+    display: grid;
+    justify-content: flex-start;
+    max-width: 1000px;
   }
   
   .footer-legal a {
-  font-family: $Jakarta;
-  color: #fff;
-  text-decoration: none;
+    font-family: $Jakarta;
+    color: $light;
+    text-decoration: none;
 
   }
-  
-
-  
-
-  @media screen and (max-width: 768px) {
+/*Mobile*/ 
+@media screen and (max-width: 768px) {
     footer {
       height: 20vh;
-      padding: 3vw;
+      padding: 0.6rem;
     }
     
     .footer-content {
@@ -89,128 +80,141 @@ footer {
     
     .links a,
     .social a {
-      padding: 1.5vw;
-      font-size: 3.5vw;
+      padding: 0.4rem;
+      font-size: 15px;
     }
     
     .footer__icons {
-      margin-bottom: 2vw;
+      gap: 2;
+      margin-bottom: 0.2rem;
     }
+
     .footer-legal{
       max-width: 100%;
-      font-size: 3.5vw;
-      text-align: center;
-      margin: -7vw auto 0;
+      font-size: 13px;
+      //text-align: center;
+      margin: -1rem auto 0;
     }
+    
     .footer__icons a {
-      width: 10vw;
-      height: 10vw;
-      font-size: 4vw;
-      margin-right: 1.5vw;
+      width: 50px;
+      height: 50px;
+      font-size: 16px;
+      margin-right: 1rem;
     }
     
     .footer-bottom{
-      max-width: 100%;
-      font-size: 3.5vw;
+     //max-width: 100%;
+      font-size: 18px;
       text-align: center;
-      margin: 2vw auto 0;
+      margin: 1rem auto 0;
     }
     
-    .footer-legal a {
-      margin-right: 1.5vw;
-    }
+    /*.footer-legal a {
+      margin-right: 1rem;
+    }*/
   }
   
 
   @media screen and (min-width: 769px) and (max-width: 1900px) {
     
     footer {
-      padding: 2.5vw;
+      padding: 0.4rem;
     }
     
     .footer-content {
+      margin: 1rem 12rem;
       justify-content: space-between;
-      height: 100%;
+      //height: 100%;
     }
     
     .links a,
     .social a {
-      padding: 1.5rem;
-      font-size: 2.5vw;
+      margin-right: 2rem;
+      padding: 1.2rem;
+      font-size: 23px;
     }
     
     .footer__icons {
-      margin-bottom: 1vw;
+      margin-right: -5rem;
+      gap: 2rem;
+      padding: 1rem;
+      //margin-bottom: 2rem;
     }
     
     .footer__icons a {
-      width: 70px;
-      height: 70px;
+      width: 50px;
+      height: 50px;
     }
     
     .footer-bottom {
       margin: 0 auto;
-      font-size: 25px;
-      padding-right: 6rem;
-      
+      font-size: 18px;
+      padding: 1rem;
+      padding-right: 8rem;
+      //padding-bottom: 0.8rem;
     }
     
     .footer-legal {
-      font-size: 25px;
-      margin: -3vw auto 0;
+      //padding-top: rem;
+      padding-bottom: 1rem;
+      
+      font-size: 18px;
+      margin: -2rem auto 0;
       
     }
-    
-    .footer-legal a {
+    /*.footer-legal a {
       margin-right: 3vw;
-    }
+    }*/
+    
   }
 
   @media screen and (min-width: 1901px) {
     
     footer {
-      padding: 2rem 1rem 2rem 0rem;
+      height: auto;
+      padding: 0.2rem;
     }
     
     .footer-content {
-      margin: 2rem 2rem 2rem 13rem;
+      margin: 2rem 12rem ;
       gap: 2rem;
       justify-content: space-between;
       
     }
     
     .links a{
-      //margin-right: rem;
-      padding: 1.5rem;
-      font-size: 35px;
+      margin-right: 2rem;
+      padding: 1rem 2rem 0 2rem;
+      font-size: 25px;
     }
     
     .footer__icons {
-      margin-bottom: 1vw;
+      margin-bottom: 1rem;
       margin-right: -30rem;
-      
+      gap: 2rem;
     }
     
     .footer__icons a {
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
     }
     
     .footer-bottom {
-      margin: 2rem 2rem 2rem 13rem;
-      font-size: 25px;
+      margin: 2rem;
+      font-size: 18px;
       padding-right: 10rem;
+      //padding-top: 1rem;
       
     }
-    
+    small{
+      padding-top: 0.8rem;
+    }
    .footer-legal {
-        margin: 2rem 2rem 2rem 13rem;
-        font-size: 25px;
-        margin-top: -5vw;
-        margin-right: auto;
-        margin-bottom: 0;
-        
-        
-      }
+        margin: 1rem 13rem;
+        font-size: 18px;
+        margin-top: -4rem;
+        padding-top: 0.4rem;
+    }
   
   }
