@@ -22,7 +22,7 @@ function Login () {
     console.log(`Email: ${email} Password: ${password}`);
     // Envoie des données du formulaire vers le serveur
 
-    navigate('/erreur');
+    navigate('/Error');
   };
 
   return (

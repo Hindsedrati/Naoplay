@@ -104,7 +104,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    text-align: flex-end;
+    text-align: end;
   }
   .error1__bouton {
     margin-left: 2rem;
@@ -165,7 +165,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    text-align: flex-end;
+    text-align: end;
   }
   .error1__bouton {
     margin-left: 2rem;

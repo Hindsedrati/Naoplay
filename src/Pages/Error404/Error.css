@@ -118,7 +118,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    text-align: flex-end;
+    text-align: end;
   }
   .partiegauche {
     display: flex;
@@ -179,7 +179,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    text-align: flex-end;
+    text-align: end;
   }
   .partiegauche {
     display: flex;

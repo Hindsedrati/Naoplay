@@ -75,6 +75,7 @@
     }
   
     .login {
+      
       padding: 2rem;
       width: 90vw;
       &__title{
@@ -110,11 +111,14 @@
 @media screen and (min-width: 769px) and (max-width: 1900px) {
    
       .login {
-        padding: 10rem;
+        
+        margin-top: 4rem;
+        padding: 6rem;
         width: 70vw;
+        height: 60vh;
         &__title{
           font-size: 50px;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
         }
         .label {
           margin-bottom: 0.8rem;
